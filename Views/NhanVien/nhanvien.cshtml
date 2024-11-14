@@ -1,0 +1,106 @@
+﻿@model DocproPVEP.Models.View.NhanVienModel
+@{
+    var listNhanVien = Model.NhanViens ?? new List<NhanVien>();
+    var listPhongBan = Model.PhongBans ?? new List<PhongBan>();
+}
+
+<table class="table table-bordered table-hover table-striped dataTable table_custom stacktable_inited stacktable" role="grid" aria-describedby="searchable_info">
+    <thead>
+        <tr>
+            <th class="center wpx50">@Locate.T("STT")</th>
+            <th class="wpx50 center">
+                <label>
+                    <input class="group-checkable" type="checkbox" />
+                    <span class="text"></span>
+                </label>
+            </th>
+            <th class="wpx250 center">@Locate.T("Tên nhân viên")</th>
+            <th class="wpx100 center">@Locate.T("Giới tính")</th>
+            <th class="wpx150 center">@Locate.T("Điện thoại")</th>
+            <th class="wpx150 center">@Locate.T("Lương")</th>
+            <th class="wpx250 center">@Locate.T("Địa chỉ")</th>
+            <th class="wpx150 center">@Locate.T("Phòng ban")</th>
+            <th class="wpx150 center">@Locate.T("Thao tác")</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var stt = ViewBag.Pagination.RowStart;
+            if (listNhanVien != null)
+            {
+                foreach (var item in listNhanVien)
+                {
+                    var alias = Utils.StringAlias(item.Name, item.ID);
+                    var updateLink = Locate.Url("/nhanvien/update/{0}.html", alias);
+
+                    var deleteLink = Locate.Url("/nhanvien/is-delete/{0}.html", alias);
+                    stt++;
+                <tr>
+                    <td class="center">@stt</td>
+                    <td class="center">
+                        <label>
+                            <input data-id="@item.ID" class="checkboxes" type="checkbox" />
+                            <span class="text"></span>
+                        </label>
+                    </td>
+                    <td class="center">@item.Name</td>
+                    <td class="center">@(@item.Sex==true?"Nam":"Nữ")</td>
+                    <td class="center">@item.Phone</td>
+                    <td class="center">@item.Salary</td>
+                    <td class="center">@item.Address</td>
+                    @foreach (var pb in listPhongBan)
+                    {
+                        if (item.IDPhongBan == pb.ID)
+                        {
+                            <td class="center">@pb.Name</td>
+                        }
+                       
+                    }
+
+                    @*<td class="center">@(item.Created.HasValue ? item.Created.Value.ToString("dd/MM/yyyy") : item.Updated.HasValue ? item.Updated.Value.ToString("dd/MM/yyyy") : "")</td>*@
+                    <td class="center">
+                        <ul class="important_action_btn">
+                            <li>
+                                <a class=" edit quickUpdate" data-target="#FrmCr" title="@Locate.T("Sửa")" href="@updateLink">
+                                    <i class="fa fa-pencil  btn-info"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="quickDelete" data-target=".ui-dialog:visible" title="@Locate.T("Xóa")" href="@deleteLink">
+                                    <i class="fa fa-trash-o btn-danger"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </td>
+                </tr>
+                }
+            }
+        }
+
+    </tbody>
+</table>
+<div class="row DTTTFooter">
+    @if (ViewBag.Pagination.RowCount == 0)
+    {
+        <div class="col-sm-12 text-center padt10">
+            <strong>
+                @Locate.T("Không có bản ghi nào được tìm thấy {0}", ViewBag.Pagination.RowCount)
+            </strong>
+        </div>
+    }
+    else
+    {
+        <div class="col-md-6">
+            <div class="dataTables_info text-left" id="searchable_info" role="status" aria-live="polite">
+                <div>
+                    <strong class="gray">
+                        @Locate.T("Có {0} bản ghi được tìm thấy", ViewBag.Pagination.RowCount)
+                    </strong>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">@ViewBag.Pagination.SetTarget("#divTables").Render()</div>
+    }
+</div>

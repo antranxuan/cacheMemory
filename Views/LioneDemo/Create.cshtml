@@ -1,0 +1,103 @@
+﻿@model DocproPVEP.Models.View.CategoryCusModel
+@{
+
+}
+<form id="FrmCr" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+      title="@ViewBag.Title" action="@Model.Url" class="form-horizontal bv-form frm-df frm-job hasFooter validateForm quickSubmit success-on-refresh form_ttHoatDong  " method="post" novalidate="novalidate">
+    <div class="dialog_content_body useScrollBar">
+        <div class="container-fluid">
+
+            <div class="clearfix"></div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Mã danh mục")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBox("Code", "Code", Model.categorie.Code, Locate.T("Mã danh mục"), Locate.T("Mã danh mục"), true, new { }, 250, (Model.Action == 2 ? true : false))
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Tên phòng họp")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBox("Name", "Name", Model.categorie.Name, Locate.T("Tên danh mục"), Locate.T("Tên danh mục"), true, new { }, 200, (Model.Action == 2 ? true : false))
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Loại danh mục cha")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusDropdownList("Parent", "Parent", Locate.T("Chọn loại danh mục cha"), Model.categories.Select(n => new SelectListItem { Value = n.ID.ToString(), Text = n.Name, Selected = Model.categorie.Parent == n.ID }).ToList(), new { @class = "form-control selectpicker", data_container = "body", data_live_search = "true" }, true, @Locate.T("Loại phòng họp"), @Locate.T("Chọn loại phòng họp"), (Model.Action == 2 ? true : false))
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Ngày duyệt")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBoxDate("Approved", "Approved", Utils.DateDisplay(Model.categorie.Approved), Locate.T("Ngày duyệt"), Locate.T("Ngày duyệt"), true)
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Người duyệt")
+                </label>
+                <div class="col-lg-9">
+                    <input id="Describe" name="Describe" placeholder="@Locate.T("Người duyệt")" class="form-control autocompleteUser" value="@Model.categorie.Describe" type="text">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group has-feedback" id="StructureFile_@Model.categorie.ID">
+                <label class="col-lg-3 control-label">@Locate.T("File đính kèm")</label>
+                <div class="col-lg-9">
+                    <div class="_hc_2r cr__SAI">
+                        <div class="f_2hc">
+                            <fieldset>
+                                <span class="attachFile padding-right-10"
+                                      data-rel="#AttachFile" data-target="#CrFileTC_@Model.categorie.ID"
+                                      data-is-only="1" data-delete-class="delMember"
+                                      data-file-name="ThumbName" data-file-path="ThumbPath" style="cursor:pointer">
+                                    <a href="#"><i class="fa fa-upload" aria-hidden="true"></i></a>
+                                </span>
+                                <span id="CrFileTC_@Model.categorie.ID" class="no-padding files aa_upload_file">
+                                    @if (Utils.IsNotEmpty(Model.categorie.ThumbPath))
+                                    {
+                                        var fullPath = GlobalConfig.StgSrcPath(Model.categorie.ThumbPath);
+                                        var fileName = Model.categorie.ThumbName;
+                                        var filePath = Model.categorie.ThumbPath;
+                                        <span class="fileitem member">
+                                            <img class="img-thumbnail" src="@fullPath" title="@fileName">
+                                            <input name="ThumbName" class="fileNames" type="text" value="@fileName" readonly>
+                                            <input name="ThumbPath" class="filePaths" type="hidden" value="@filePath">
+                                            <button type="button" class="btn btn-xs btn-link close delMember">x</button>
+                                        </span>
+                                    }
+                                </span>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog_content_footer">
+        <div class="container-fluid">
+            <div class="form-group">
+                <div class="col-xs-12 text-right">
+                    <input type="hidden" name="ID" id="ID" value="@Model.categorie.ID" />
+                    @if (Model.Action != 2)
+                    {
+                        <button class="btn btn-primary btn-sm" type="submit">@Locate.T("Lưu")</button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

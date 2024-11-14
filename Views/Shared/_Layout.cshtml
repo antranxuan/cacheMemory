@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- bootstrap -->
+    <link href="/Assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="/Assets/bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+    <!-- jquery -->
+    <link href="/Assets/jquery/css/jquery.ui.css" rel="stylesheet" />
+    <link href="/Assets/jquery/css/jquery.cscrollbar.css" rel="stylesheet" />
+    <link href="/Assets/jquery/css/jquery.datetimepicker.css" rel="stylesheet" />
+    <link href="/Assets/jquery/css/jquery.jcrop.css" rel="stylesheet" />
+    <link href="/Assets/jquery/css/jquery.lightbox.min.css" rel="stylesheet" />
+    <link href="/Assets/jquery/css/jquery.stacktable.css" rel="stylesheet" />
+    <link href="/Assets/jquery/css/jquery.bootstrap-select.css" rel="stylesheet" />
+    <link href="/Assets/jquery/css/jquery.owlCarousel.css" rel="stylesheet" />
+    <link href="/Assets/jquery/css/jquery.owl.theme.default.min.css" rel="stylesheet" />
+    <!-- beyond -->
+    <link href="/Assets/beyond/css/font-awesome.css" rel="stylesheet" />
+    <link href="/Assets/beyond/css/weather-icons.css" rel="stylesheet" />
+    <link href="/Assets/beyond/css/beyond.css" rel="stylesheet" />
+    <link href="/Assets/beyond/css/demo.css" rel="stylesheet" />
+    <link href="/Assets/beyond/css/typicons.css" rel="stylesheet" />
+    <link href="/Assets/beyond/css/animate.css" rel="stylesheet" />
+    <link href="/Assets/beyond/css/dataTables.bootstrap.css" rel="stylesheet" />
+    @*<link href="/Assets/beyond/css/beyond-less/select2.css" rel="stylesheet" />*@
+    <link href="/Assets/jquery/css/jquery.select2.css" rel="stylesheet" />
+    <!-- pdf -->
+    <link href="/pdf/viewer.css" rel="stylesheet" />
+    <!-- app -->
+    <link href="~/Assets/app/css/ionicons.min.css" rel="stylesheet" />
+    <link href="~/Assets/app/css/icons.css" rel="stylesheet" />
+    <link href="~/Assets/app/css/main.css" rel="stylesheet" />
+    <link href="~/Assets/app/css/size.css" rel="stylesheet" />
+    <link href="~/Assets/app/css/icons.css" rel="stylesheet" />
+    <link href="~/Assets/app/css/upfile.css" rel="stylesheet" />
+    <link href="~/Assets/app/css/table.css" rel="stylesheet" />
+    @* <link href="~/Assets/app/css/chat.css" rel="stylesheet" />*@
+    <link href="~/Assets/app/css/ntfs.css" rel="stylesheet" />
+    <link href="~/Assets/app/css/stg.css" rel="stylesheet" />
+    <link href="~/Assets/app/css/cust.css" rel="stylesheet" />
+
+    @{
+        var themeDef = GlobalConfig.GetStringSetting("ThemeDef");
+        if (!string.IsNullOrEmpty(themeDef))
+        {
+            <link href="/Assets/app/css/@(themeDef).css" rel="stylesheet" />
+        }
+    }
+    <!-- fix_ie -->
+    <link href="/Assets/app/css/fix_ie.css" rel="stylesheet" />
+</head>
+<body class="@(Utils.IsEmpty(GlobalConfig.GetStringSetting("BannerHeader")) ? string.Empty : "hasBanner")">
+    @Html.Partial("Header")
+    <div class="main-container container-fluid">
+        <div class="page-container">
+            <div class="page-sidebar" id="sidebar">
+                @Html.Partial("Left")
+            </div>
+            <div id="Section" class="page-container">
+                @RenderPage("Message.cshtml")
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <div id="Overlay" class="overlay"><sub></sub></div>
+    <div class="hidden">
+        <input type="file" class="hidden" id="InputAvatar" multiple="multiple" />
+        <input type="file" class="inputUpFile" id="AttachFile" data-bv-notempty-message="@Locate.T("Tên file không được trống")" />
+        <input type="file" class="inputUpFile" id="AttachFiles" multiple="multiple" data-bv-notempty-message="@Locate.T("Tên file không được trống")" />
+        <input type="file" class="inputStgFile setAjaxUploaded" data-type="OCR" id="AttachSfiles" data-target="#DragBoxFrmUpfile" multiple="multiple" data-bv-notempty-message="@Locate.T("Tên file không được trống")" />
+        <textarea id="CDATA" class="hidden">@ViewBag.CData</textarea>
+        <audio id="AudioChat"><source src="/login/Assets/app/audio/notify.mp3" type="audio/mpeg" /></audio>
+    </div>
+    @*@Html.Partial("Dock")*@
+    <!-- Jquery -->
+    <script src="/Assets/jquery/js/jquery.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.datetimepicker.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.contextMenu.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.dateformat.js?version=@ViewBag.VersionFrontEnd"></script>
+
+    <script src="/Assets/jquery/js/jquery.ui.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.mousewheel.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.cscrollbar.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.jcrop.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.treegrid.js?version=@ViewBag.VersionFrontEnd"></script>
+
+    <script src="/Assets/jquery/js/jquery.serializejson.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.rating.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.bootstrap-select.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.lightbox-plus-jquery.min.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.stacktable.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/jquery/js/jquery.simple.money.format.js?version=@ViewBag.VersionFrontEnd"></script>
+
+    <!-- Bootstrap -->
+    <script src="/Assets/bootstrap/js/bootstrap.js?version=@ViewBag.VersionFrontEnd"></script>
+    <!--     @Scripts.Render("~/pdf/js.js")    -->
+    <!-- Beyond -->
+    <script src="/Assets/beyond/js/slimscroll/jquery.slimscroll.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/validation/bootstrapValidator.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/editors/summernote/summernote.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/nestable/jquery.nestable.min.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/charts/easypiechart/jquery.easypiechart.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/charts/easypiechart/easypiechart-init.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/charts/flot/jquery.flot.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/charts/flot/jquery.flot.resize.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/charts/flot/jquery.flot.pie.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/charts/flot/jquery.flot.tooltip.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/charts/flot/jquery.flot.orderBars.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/charts/flot/jquery.flot.time.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/skins.js?version=@ViewBag.VersionFrontEnd"></script>
+    <script src="/Assets/beyond/js/beyond.js?version=@ViewBag.VersionFrontEnd"></script>
+    <!-- highstock -->
+    <script src="/Assets/jquery/js/jquery.highstock.js?version=@ViewBag.VersionFrontEnd"></script>
+
+    <!-- app -->
+    <script src="~/Assets/app/js/autocomplete.js"></script>
+    <script src="~/Assets/app/js/utils.js"></script>
+    <script src="~/Assets/app/js/main.js"></script>
+    <script src="~/Assets/app/js/uploader.js"></script>
+    <script src="~/Assets/app/js/upfile.js"></script>
+    <script src="~/Assets/app/js/admin.js"></script>
+    <script src="~/Assets/app/js/avatar.js"></script>
+    <script src="~/Assets/app/js/pages.js"></script>
+    <script src="~/Assets/app/js/test.js"></script>
+    <script src="~/Assets/app/js/cust.js"></script>
+    <!-- login -->
+    <script src="/login/Assets/jquery/js/jquery.signalr.js"></script>
+    <script src="/login/Assets/app/js/realtime.js"></script>
+    <script src="/login/Assets/app/js/chat.js"></script>
+    <script src="/login/realtime/hubs"></script>
+    <!-- check-ie -->
+    <script src="/Assets/app/js/modernizr-custom.js"></script>
+    <script src="/Assets/app/js/check-ie-version.js"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>

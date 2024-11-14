@@ -1,0 +1,555 @@
+
+
+[14-11-2024 11:33:44]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 11:33:44]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 11:49:36]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 11:49:36]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 13:44:9]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 13:44:9]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 13:45:28]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 13:45:28]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 13:52:10]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 13:52:10]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 13:57:4]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 13:57:4]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 14:7:57]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 14:7:57]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 14:9:59]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 14:9:59]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 14:23:12]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 14:23:12]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 14:39:34]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 14:39:34]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 14:53:36]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 14:53:36]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 14:55:12]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 14:55:12]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 15:8:4]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 15:8:4]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 15:10:32]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 15:10:32]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 15:32:59]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 15:32:59]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 15:35:49]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 15:35:49]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 15:38:33]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 15:38:33]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 15:41:58]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 15:41:58]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 15:48:0]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 15:48:0]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 16:7:57]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:7:59]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:8:0]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:8:1]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:8:1]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:10:5]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:10:7]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:10:8]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:10:9]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:10:10]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:16:37]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:16:46]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:16:48]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:20:36]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:20:37]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:20:38]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:20:39]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:20:39]:	System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at ASP._Page_Views_Nhanvien_Create_cshtml.Execute() in d:\AXA\Source\pvep.docpro.vn\Views\NhanVien\Create.cshtml:line 66
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:23:13]:	System.Web.HttpParseException (0x80004005): The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:23:14]:	System.Web.HttpParseException (0x80004005): The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:23:15]:	System.Web.HttpParseException (0x80004005): The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:23:15]:	System.Web.HttpParseException (0x80004005): The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:23:16]:	System.Web.HttpParseException (0x80004005): The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:23:17]:	System.Web.HttpParseException (0x80004005): The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:23:19]:	System.Web.HttpParseException (0x80004005): The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:23:25]:	System.Web.HttpParseException (0x80004005): The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:23:26]:	System.Web.HttpParseException (0x80004005): The else block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DocproPVEP.Controllers.BaseController.GetView(String viewName, Object data) in D:\AXA\Source\pvep.docpro.vn\Controllers\BaseController.cs:line 531
+
+
+[14-11-2024 16:26:57]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 16:26:57]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()
+
+
+[14-11-2024 16:28:52]:	D:\AXA\Source\Dard.docpro.vn\license.lic
+
+
+[14-11-2024 16:28:52]:	CanBQ.Exceptions.LicenseInvalidException: License file is empty.
+   at CanBQ.License.‏‎⁬‮⁯⁯‪⁪‍⁭‪⁪‌‏⁫⁬⁯⁮⁪⁪‫⁬‎⁭⁯‮⁬‌‍⁬‬‏‭⁫⁪⁮⁬⁯‪‮(String )
+   at CanBQ.License.‬‬⁪⁫‌⁬‏‮‮⁭⁮​‭‭‫⁫⁬⁮⁪‭⁭⁪‍‮⁪‍‫‍‬‍⁯​‍⁭‮‍⁫‮‮⁯‮(String )
+   at CanBQ.LicenseManager.LoadLicense(String fileName)
+   at DocProUtil.Cf.LicenseConfig.LoadLicense(Boolean isWeb)
+   at DocProUtil.Cf.LicenseConfig.TryLoadLicense()

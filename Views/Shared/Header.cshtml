@@ -1,0 +1,46 @@
+﻿@{
+    var bannerHeader = GlobalConfig.GetStringSetting("BannerHeader");
+    if (!string.IsNullOrEmpty(bannerHeader))
+    {
+        @Html.Partial(bannerHeader)
+    }
+}
+<div class="navbar @(string.IsNullOrEmpty(bannerHeader) ? "no-banner" : "yet-banner")">
+    <div class="navbar-inner">
+        <div class="navbar-container">
+            <div class="navbar-header pull-left">
+                <a href="@Locate.RUrl("/home.html")" class="navbar-brand">
+                    @if (Utils.IsEmpty(ViewBag.Channel.Logo))
+                    {
+                        <small>
+                            <span class="ilogo" title="@(Locate.T(ViewBag.Channel.Name ?? "Hệ thống quản trị tài liệu"))"></span>
+                        </small>
+                    }
+                    else
+                    {
+                        <small>
+                            <img class="logo" title="@(Locate.T(ViewBag.Channel.Name ?? "Hệ thống quản trị tài liệu"))" src="@GlobalConfig.StgSrcPath(ViewBag.Channel.Logo)">
+                        </small>
+                        <style>
+                            .ui-dialog .ui-dialog-title{
+                                background-image: url("@(GlobalConfig.StgSrcPath(ViewBag.Channel.Logo))")
+                            }
+                        </style>
+                    }
+                </a>
+            </div>            
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="collapse-icon ion-android-menu"></i>
+            </div>            
+            <div class="appname hidden-sm hidden-xs">
+
+                <a href="@Locate.Url("/home.html")" title="@(Locate.T(ViewBag.Channel.Name ?? "Hệ thống quản trị tài liệu"))">@(Locate.T(ViewBag.Channel.Name ?? "Hệ thống quản trị tài liệu"))</a>
+            </div>
+            <div class="navbar-header pull-right">
+                <div class="navbar-account">
+                    @Html.Partial("Blocks/Login")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

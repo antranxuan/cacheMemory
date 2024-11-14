@@ -1,0 +1,52 @@
+﻿<div class="page-breadcrumbs">
+    <ul class="breadcrumb">
+        <li>
+            <a href="@Locate.Url("/")"><i class="fa fa-home"></i>@Locate.T("Tổng quan")</a>
+        </li>
+        <li>
+            <a class="quickView" data-target="#Section" href="@Locate.Url("/category-type.html")">@Locate.T("Quản lý danh mục")</a>
+        </li>
+        @if (!Equals(ViewBag.CategoryParents, null))
+        {
+            <li>
+                <a class="quickView" data-target="#Section" href="@Locate.Url("/category.html?Type={0}", ViewBag.CategoryType.ID)">@Locate.T(ViewBag.CategoryType.Name)</a>
+            </li>
+            foreach (var item in ViewBag.CategoryParents)
+            {
+                <li>
+                    <a class="quickView" data-target="#Section" href="@Locate.Url("/category/{0}.html?Type={1}", Utils.StringAlias(item.Name, item.ID), ViewBag.CategoryType.ID)">@item.Name</a>
+                </li>
+            }
+        }
+        <li class="active">@ViewBag.Title</li>
+    </ul>
+</div>
+<div class="container-fluid">
+    <div class="page-body">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="widget">
+                    <div class="widget-header bordered-bottom bordered-yellow">
+                        <span class="widget-caption"><i class="menu-icon fa fa-list"></i>@ViewBag.Title</span>
+                        <div class="widget-buttons">
+                            <a class="widget_back_btn text-btn" href="#" title="@Locate.T("Quay lại")"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span>@Locate.T("Quay lại")</span></a>
+                            <a data-toggle="maximize" href="#"><i class="fa fa-expand"></i></a>
+                            <a data-toggle="collapse" href="#"><i class="fa fa-minus"></i></a>
+                            <a data-toggle="dispose" href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="widget-body no-padding">
+                        <div class="dataTables_wrapper form-inline">
+                            @Html.Partial("Toolbar")
+                            @Html.Partial("Categories")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hidden">
+        @Html.Partial("Create")
+
+</div>

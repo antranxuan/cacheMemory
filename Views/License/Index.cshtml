@@ -1,0 +1,144 @@
+﻿@model DocProLogic.Models.LicenseModel
+<div class="page-breadcrumbs">
+    <ul class="breadcrumb">
+        <li>
+            <i class="fa fa-home"></i>
+            <a href="@Locate.Url("/home.html")">@Locate.T("Tổng quan")</a>
+        </li>
+        <li class="active">
+            @ViewBag.Title
+        </li>
+    </ul>
+</div>
+<div id="SHContainer" class="search-container h100px"></div>
+<div class="page-body" id="SHResult">
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-6 center-block">
+            <div class="widget">
+                <div class="widget-header bordered-bottom bordered-yellow">
+                    <a class="widget_back_btn" href="#" title="@Locate.T("Quay lại")"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span>@Locate.T("Quay lại")</span></a><span class="widget-caption">@ViewBag.Title</span>
+                    <div class="widget-buttons">
+                        <a data-toggle="maximize" href="javascript:;"><i class="fa fa-expand"></i></a>
+                        <a data-toggle="collapse" href="#"><i class="fa fa-minus"></i></a>
+                        <a data-toggle="dispose" href="javascript:;"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="widget-body no-padding">
+                    <div class="dataTables_wrapper form-inline">
+                        <div class="dataTables_filter">
+                            <form data-target="#Section" action="#" method="post" enctype="multipart/form-data">
+                                <div class="col-md-3 hidden quickSearch_md"></div>
+                                <div class="col-md-2 hidden"></div>
+                            </form>
+                        </div>
+                        <div class="DTTT btn-group">
+                            @if (Model.LicenseInfo == null)
+                            {
+                                <button class="btn btn-danger btn-xs openDialog" type="button"
+                                        data-width="300" data-target="#FormSecret">
+                                    @Locate.T("Kích hoạt hệ thống")
+                                </button>
+                            }
+                            <button class="btn btn-danger btn-xs openDialog" type="button"
+                                    data-width="300" data-target="#FormLicense">
+                                @Locate.T("Cập nhật giấy phép")
+                            </button>
+                        </div>
+                        <table id="TblGuests" class="table table-bordered table-hover table-striped dataTable" role="grid" aria-describedby="searchable_info">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        @if (Model.LicenseInfo == null)
+                                        {
+                                            <div class="">
+                                                <div class="col-md-12">
+                                                    <strong class="red text-center">@Locate.T("Hệ thống chưa được cấp phép hoạt động.")</strong>
+                                                </div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class=" hidden">
+                                                <div class="col-md-2">@Locate.T("Mã số"):</div>
+                                                <div class="col-md-3">@Model.LicenseInfo.ID</div>
+                                            </div>
+                                            <div class="">
+                                                <div class="col-md-2">@Locate.T("Khách hàng"):</div>
+                                                <div class="col-md-3">@Model.LicenseInfo.Customer</div>
+                                            </div>
+                                            <div class="">
+                                                <div class="col-md-2">@Locate.T("Ngày bắt đầu"):</div>
+                                                <div class="col-md-3">@Model.LicenseInfo.StartDate</div>
+                                            </div>
+                                            <div class="">
+                                                <div class="col-md-2">@Locate.T("Ngày kết thúc"):</div>
+                                                <div class="col-md-3">@Model.LicenseInfo.EndDate</div>
+                                            </div>
+                                            <div class="">
+                                                <div class="col-md-2">@Locate.T("Danh sách mô đun"):</div>
+                                                <div class="col-md-3">
+                                                    @if (Utils.IsEmpty<Module>(Model.Modules))
+                                                    {
+                                                        <div>@Locate.T("Không có mô đun nào được cấp phép hoạt động")</div>
+                                                    }else
+                                                    {
+                                                        foreach(var module in Model.Modules)
+                                                        {
+                                                            <div class="col-md-12 nopad">
+                                                                <i class="glyphicon glyphicon-tag blue"></i> @module.Name
+                                                            </div>
+                                                        }
+                                                    }
+                                                </div>
+                                            </div>
+                                        }
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="col-md-12">
+                                            <div class="col-md-2">@Locate.T("Server"):</div>
+                                            <div class="col-md-10">@Model.MachineInfo</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hidden">
+    <form id="FormLicense" action="@Locate.Url("/license/save.html")" method="post"
+          class="form-license" enctype="multipart/form-data" title="@Locate.T("Cập nhật giấy phép")">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <input type="file" name="LicenseFile" id="LicenseFile" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-danger btn-xs" type="submit">@Locate.T("Đồng ý")</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form id="FormSecret" action="@Locate.Url("/license/secret.html")" method="post"
+          class="form-license" enctype="multipart/form-data" title="@Locate.T("Kích hoạt hệ thống")">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <input type="password" name="ActiveKey" id="SecretActiveKey" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-danger btn-xs" type="submit">@Locate.T("Kích hoạt")</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

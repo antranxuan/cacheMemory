@@ -1,0 +1,43 @@
+﻿<form id="FrmDlItems" action="@ViewBag.DeletesParam.Action" title="@ViewBag.Title"
+      accept-charset="utf-8" enctype="multipart/form-data" class="form-horizontal form-group-sm frm-df frm-rm form-delete validateForm" method="POST">
+    <div class="container-fluid">
+        <div class="form-group form-group-title">
+            <div class="col-sm-12 txtct">
+                <label class="control-label title">@ViewBag.Title</label>
+            </div>
+        </div>
+        <div class="form-group form-group-name">
+            <div class="col-sm-12 txtct">
+                <label class="control-label name">@ViewBag.DeletesParam.ConfTitle</label>
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="col-sm-12 txtct">
+                @if (Request.IsAjaxRequest())
+                {
+                    <button class="btn btn-default btn-sm closeDialog" type="button">@Locate.T("Hủy")</button>   
+                }
+                else
+                {
+                    <a class="btn btn-default btn-sm backLink" href="@ViewBag.DeletesParam.RedirectPath" title="@ViewBag.BackTitle">@Locate.T("Quay lại")</a>
+                }
+                @if (!Utils.IsEmpty<long>(ViewBag.DeletesParam.ID))
+                {
+                    foreach (var id in ViewBag.DeletesParam.ID)
+                    {
+                        <input type="hidden" name="ID" value="@id" />
+                    }
+                }
+                @if (!Utils.IsEmpty<string>(ViewBag.DeletesParam.IDFile))
+                {
+                    foreach (var id in ViewBag.DeletesParam.IDFile)
+                    {
+                        <input type="hidden" name="IDFile" value="@id" />
+                    }
+                }
+                <input type="hidden" name="RedirectPath" value="@ViewBag.DeletesParam.RedirectPath" />
+                <button class="btn btn-danger btn-sm" type="submit">@Locate.T("Xóa")</button>
+            </div>
+        </div>
+    </div>
+</form>

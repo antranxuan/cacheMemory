@@ -1,0 +1,82 @@
+﻿<div class="page-breadcrumbs">
+    <ul class="breadcrumb">
+        <li>
+            <a href="@Locate.RUrl("/home.html")"><i class="fa fa-home"></i>@Locate.T("Tổng quan")</a>
+        </li>
+        <li>@Locate.T("Quản lý danh mục")</li>
+        <li class="active">@ViewBag.Title</li>
+    </ul>
+</div>
+<div class="page-body">
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div class="widget">
+                <div class="widget-header bordered-bottom bordered-yellow">
+                    <span class="widget-caption has-sub-caption">
+                        <span class="widget-caption-left">
+                            <i class="fa fa-folder-open"></i>
+                        </span>
+                        <span class="widget-caption-right">
+                            <span class="widget-mainCaption">@ViewBag.Title</span>
+                        </span>
+                    </span>
+                    <div class="widget-buttons">
+                        <a class="widget_back_btn text-btn hidden" href="#" title="@Locate.T("Quay lại")"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span>@Locate.T("Quay lại")</span></a>
+                        <a data-toggle="maximize" href="javascript:;"><i class="fa fa-expand"></i></a>
+                        <a data-toggle="collapse" href="#"><i class="fa fa-minus"></i></a>
+                        <a data-toggle="dispose" href="javascript:;"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="widget-body no-padding">
+                    <div class="dataTables_wrapper form-inline">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Thông tin dự án</h3>
+                            </div>
+
+                            <div class="panel-body">
+                                Thông tin dự án
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab3">
+                            <li class="tab-sky active">
+                                <a data-toggle="tab" href="#thongtinchung" aria-expanded="true">
+                                    <i class="fa fa-info-circle"></i>Thông tin chung
+                                </a>
+                            </li>
+                            <li class="tab-red">
+                                <a data-toggle="tab" href="#" aria-expanded="false">
+                                    Điều Khoản HD
+                                </a>
+                            </li>
+                            <li class="tab-red">
+                                <a data-toggle="tab" href="#" aria-expanded="false">
+                                    Công Việc
+                                </a>
+                            </li>
+                            <li class="tab-red">
+                                <a data-toggle="tab" href="#" aria-expanded="false">
+                                    Phương An KT
+                                </a>
+                            </li>
+                            <li class="tab-red">
+                                <a data-toggle="tab" href="#" aria-expanded="false">
+                                    Giả Định Tính Toán
+                                </a>
+                            </li>
+                            <li class="tab-red">
+                                <a data-toggle="tab" href="#" aria-expanded="false">
+                                    Tài Liệu
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="thongtinchung" class="tab-pane">
+                            @Html.Partial("ThongTinChung")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

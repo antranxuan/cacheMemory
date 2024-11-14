@@ -1,0 +1,129 @@
+<div class="dock useDragable hidden-xs hidden-sm">
+    <div id="dockWrapper">
+        <a href="#" class="btn_hide_dock" title="@Locate.T("Ẩn thanh menu ngang")">
+            <i class="ion-ios-close-empty"></i>
+        </a>
+        <div class="cap left"></div>
+        <div class="dock_icons">
+            @if (ViewBag.CUser.IsAdmin)
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("admin", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản trị hệ thống")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_1.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser,
+                        IModule.SuDungKho,
+                       IModule.QuanLyKho,
+                        IModule.QuanLySoHoSo,
+                        IModule.QuanLyKhoVatLy,
+                       IModule.QuanLyMatKhauLuuTru))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("stg", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản lý tài liệu")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_2.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser,
+                        IModule.ThucHienCongViec,
+                        IModule.QuanLyCongViec,
+                        IModule.BaoCaoCongViecPhong,
+                        IModule.BaoCaoToanBoCongViec))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("wfl", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản lý công việc")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_3.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser,
+                      IModule.QuanLyNhanVien,
+                      IModule.QuanLyChamCong,
+                      IModule.QuanLyKhenThuongKyLuat,
+                      IModule.QuanLyHopDongNhanVien,
+                      IModule.QuanLyBangLuong))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("qlns", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản lý nhân sự")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_4.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser,
+                      IModule.QuanLyAM,
+                      IModule.QuanLyBA,
+                      IModule.PM,
+                      IModule.GiamDocDuAn,
+                      IModule.GiamDocKyDuyet,
+                      IModule.BanLanhDao,
+                      IModule.QuanLyBA,
+                      IModule.QuanLyDEV,
+                      IModule.QuanLyTEST,
+                      IModule.QuanLySUPPORT
+                      ))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("qlda", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản lý dự án")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_5.png">
+                    </a>
+                </div>
+            }
+
+            @if (GlobalConfig.IsAccess(ViewBag.CUser,
+                        IModule.LapKeHoachDuAn,
+                        IModule.DuyetKeHoachDuAn,
+                        IModule.ThucHienKeHoachDuAn,
+                        IModule.ThongKeKeHoachDuAn))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("qlkd", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản lý kinh doanh")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_6.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser,
+                       IModule.QuanLyTaiSan,
+                       IModule.DangKyMuonTaiSan))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("qlts", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản lý tài sản")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_7.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser,
+                IModule.DangKyCapLicense,
+                IModule.DuyetDangKyCapLicense,
+                IModule.QuanLyLicenseDocPro,
+                IModule.QuanLyLicenseIOne,
+                IModule.DuyetCapLicense))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("qllicense", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản lý license")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_8.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser,
+                IModule.BaoCaoHeThongSanPhamPhanMem, IModule.BienTapHeThongSanPhamPhanMem, IModule.KiemDuyetHeThongSanPhamPhanMem, IModule.XuatBanHeThongSanPhamPhanMem))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("qlsp", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản lý sản phẩm")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_9.png">
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<div class="toggle_dock">
+    <div class="toggle_dock_content">
+        <div class="toggle_dock_open_icon">
+            <a href="#" class="btn_show_dock" title="@Locate.T("Hiện thanh menu ngang")">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</div>

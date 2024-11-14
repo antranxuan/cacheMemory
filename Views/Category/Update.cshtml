@@ -1,0 +1,44 @@
+﻿<form id="FrmUpCategory" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+      title="@Locate.T("Cập nhật danh mục")" action="@Locate.Url("/category/change.html")" class="form-horizontal bv-form validateForm useScrollBar" method="post" novalidate="novalidate">
+    <div class="container-fluid">
+        <div class="form-group">
+            <label class="col-lg-2 control-label">@Locate.T("Thuộc loại")</label>
+            <div class="col-lg-10">
+                <input id="UpCategoryParentName" name="ParentName" data-targetid="#UpCategoryParentID" data-id-not-in="@ViewBag.Category.ID" data-type="@(ViewBag.CategoryType.ID)" value="@ViewBag.CategoryParent.Name" placeholder="@Locate.T(ViewBag.CategoryType.Name)" class="form-control autocompleteCategory" type="text">
+                <input id="UpCategoryParentID" name="Parent" type="hidden" value="@ViewBag.CategoryParent.ID" />
+            </div>
+        </div>
+        <div class="form-group has-feedback">
+            <label class="col-lg-2 control-label">@Locate.T("Mã")</label>
+            <div class="col-lg-10">
+                <input id="CrCategoryCode" name="Code" type="text" placeholder="@Locate.T("Mã")"
+                       data-bv-notempty-message="@Locate.T("Mã không được trống")"
+                       data-bv-notempty="true" class="form-control"
+                       data-bv-field="Code">
+            </div>
+        </div>
+        <div class="form-group has-feedback">
+            <label class="col-lg-2 control-label">@Locate.T("Tên")</label>
+            <div class="col-lg-10">
+                <input id="UpCategoryName" name="Name" type="text" placeholder="@Locate.T("Tên")" class="form-control"
+                       value="@ViewBag.Category.Name"
+                       data-bv-notempty-message="@Locate.T("Tên không được trống")"
+                       data-bv-notempty="true"
+                       data-bv-field="Name">
+            </div>
+        </div>
+        <div class="form-group has-feedback">
+            <label class="col-lg-2 control-label">@Locate.T("Mô tả")</label>
+            <div class="col-lg-10">
+                <textarea id="UpCategoryDescribe" name="Describe" rows="10" cols="20" placeholder="@Locate.T("Mô tả")" class="form-control noresize" data-bv-field="Describe">@ViewBag.Category.Describe</textarea>
+            </div>
+        </div>
+
+    </div>
+    <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+        <div class="ui-dialog-buttonset">
+            <input type="hidden" id="UpCategoryID" name="ID" value="@ViewBag.Category.ID" />
+            <button type="submit" class="btn btn-info">@Locate.T("Xong")</button>
+        </div>
+    </div>
+</form>

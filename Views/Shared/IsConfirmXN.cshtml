@@ -1,0 +1,23 @@
+﻿<form id="FrmDlItem" action="@ViewBag.ConfirmParam.Action" title="@ViewBag.Title"
+      accept-charset="utf-8" enctype="multipart/form-data" class="form-horizontal form-group-sm frm-df frm-rm form-delete validateForm" method="POST">
+    <div class="container-fluid">
+        <div class="form-group form-group-title">
+            <div class="col-sm-12 txtct">
+                <label class="control-label title">@ViewBag.Title</label>
+            </div>
+        </div>
+        <div class="form-group form-group-name">
+            <div class="col-sm-12 txtct">
+                <label class="control-label name" title="@ViewBag.ConfirmParam.ConfTitle">@ViewBag.ConfirmParam.ConfTitle</label>
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="col-sm-12 txtct">
+                <button class="btn btn-success btn-sm" name="TypeSubmit" value="1" type="submit">@Locate.T("Đồng ý")</button>
+                <button class="btn btn-primary btn-sm" name="TypeSubmit" value="2" type="submit">@Locate.T("Cập nhật")</button>
+                <input type="hidden" name="ID" value="@ViewBag.ConfirmParam.ID" />
+                <input type="hidden" name="RedirectPath" value="@ViewBag.ConfirmParam.RedirectPath" />
+            </div>
+        </div>
+    </div>
+</form>

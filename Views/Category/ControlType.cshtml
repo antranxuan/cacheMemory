@@ -1,0 +1,30 @@
+﻿@{
+    if (Model == "create")
+    {
+        <div class="form-group hidden">
+            <label class="col-lg-4 control-label">@Locate.T("Loại danh mục")</label>
+            <div class="col-lg-8">
+                <select class="selectpicker foorm-control" data-container="body" data-size="5" data-live-search="true" id="CrCategoryType" name="Type">
+                @foreach(var type in ViewBag.CategoryTypes)
+                {
+                    <option @(ViewBag.CategoryType.ID == type.ID ? "selected" : string.Empty) value="@(type.ID)">@Locate.T(type.Name)</option>
+                }
+                </select>
+            </div>
+        </div>
+    }
+    else if (Model == "update")
+    {
+        <div class="form-group hidden">
+            <label class="col-lg-4 control-label">@Locate.T("Loại danh mục")</label>
+            <div class="col-lg-8">
+                <select class="selectpicker form-control" data-container="body" data-size="5" data-live-search="true" id="UpCategoryType" name="Type">
+                @foreach (var type in ViewBag.CategoryTypes)
+                {
+                    <option @(ViewBag.CategoryType.ID == type.ID ? "selected" : string.Empty) value="@(type.ID)">@Locate.T(type.Name)</option>
+                }
+                </select>
+            </div>
+        </div>
+    }
+}

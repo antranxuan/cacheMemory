@@ -1,0 +1,78 @@
+﻿<table id="TblCategories" class="table table-bordered table-hover table-striped dataTable" role="grid" aria-describedby="searchable_info">
+    <thead>
+        <tr role="row">
+            <th class="wpx50 center" tabindex="0">@Locate.T("STT")</th>
+            <th class="wpx50 center">
+                <label>
+                    <input class="group-checkable" type="checkbox" />
+                    <span class="text"></span>
+                </label>
+            </th>
+            <th class="wpx250" tabindex="0" aria-controls="searchable">@Locate.T("Mã")</th>
+            <th class="wpx250" tabindex="0" aria-controls="searchable">@Locate.T("Tên")</th>
+            <th class="wauto" tabindex="0" aria-controls="searchable">@Locate.T("Mô tả")</th>
+            <th class="wpx80 txtct" tabindex="0" aria-controls="searchable">@Locate.T("Thao tác")</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var stt = ViewBag.Pagination.RowStart;
+
+            var categoryParent = (Category)ViewBag.CategoryParent;
+            var categories = (List<Category>)ViewBag.Categories;
+            var idParents = categories.Where(x => x.Parent == categoryParent.ID).Select(x => x.ID).ToList() ?? new List<int>();
+
+            foreach (var item in categories)
+            {
+                stt++;
+                var alias = Utils.StringAlias(item.Name, item.ID);
+                var viewLink = Locate.Url("/category/{0}.html", alias);
+                var updateLink = Locate.Url("/category/update/{0}.html", alias);
+                var deleteLink = Locate.Url("/category/is-delete/{0}.html", alias);
+             
+                var parentSelector = idParents.Any(x => x == item.Parent) ? string.Format("treegrid-parent-{0}", item.Parent) : string.Empty;
+
+                <tr role="row" class="treegrid-@item.ID @parentSelector">
+                    <td class="sorting_1 center">@stt</td>
+                    <td class="center">
+                        <label>
+                            <input data-id="@item.ID" class="checkboxes" type="checkbox" />
+                            <span class="text"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <a class="quickViewCate" data-target="#Section" href="@viewLink">@item.Code</a>
+                    </td>
+                    <td>
+                        <a class="quickViewCate" data-target="#Section" href="@viewLink">@item.Name</a>
+                    </td>
+                    <td>@(new HtmlString(item.Describe))</td>
+                    <td class="sorting_1">
+                        <div class="btns">
+                            @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyDanhMuc))
+                            {
+                                <div class="btns no_minwidth">
+
+                                    <a class="btn btn-xs btn-blue quickUpdate" data-target=".ui-dialog:visible" data-id="@item.ID" title="@Locate.T("Chỉnh sửa")" href="@updateLink">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    </a>
+
+                                    <a class="btn btn-xs btn-danger quickDelete" data-id="@item.ID" data-target=".ui-dialog:visible" title="@Locate.T("Xóa")" href="@deleteLink">
+                                        <i class="fa fa-trash-o"></i>
+                                    </a>
+
+                                </div>
+                            }
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<div class="row DTTTFooter">
+    <div class="col-sm-6">
+        <div class="dataTables_info" id="searchable_info" role="status" aria-live="polite"></div>
+    </div>
+    <div class="col-sm-6">@ViewBag.Pagination.SetTarget("#Section").Render()</div>
+</div>

@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{297DB3C7-ECD8-4461-84FF-08EAB1FC20F5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocproPVEP</RootNamespace>
+    <AssemblyName>DocproPVEP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CanBQ, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CommonPackages\CanBQ.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\ClosedXML.0.95.4\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocProLogic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CommonPackages\DocProLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="DocProModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CommonPackages\DocProModel.dll</HintPath>
+    </Reference>
+    <Reference Include="DocProProdKey, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CommonPackages\DocProProdKey.dll</HintPath>
+    </Reference>
+    <Reference Include="DocProSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CommonPackages\DocProSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="DocProUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CommonPackages\DocProUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\Dard.docpro.vn\bin\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Elasticsearch.Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96c599bbe3e70f5d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DllComon\Elasticsearch.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook">
+      <HintPath>..\packages\Facebook.7.0.10-beta\lib\net45\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PetaPoco, Version=5.0.1.27471, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CommonPackages\PetaPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis">
+      <HintPath>CommonPackages\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CommonPackages\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\dard.docpro.vn\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Xceed.Words.NET">
+      <HintPath>..\..\..\..\..\..\..\Development\Hệ Thống DocPro\Source New\DocProDard\bin\Xceed.Words.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing">
+      <HintPath>..\..\_Library\Releases\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\app\audio\notify.mp3" />
+    <Content Include="Assets\app\css\404.css" />
+    <Content Include="Assets\app\css\500.css" />
+    <Content Include="Assets\app\css\chat.css" />
+    <Content Include="Assets\app\css\cmt.css" />
+    <Content Include="Assets\app\css\cust.css" />
+    <Content Include="Assets\app\css\docless.css" />
+    <Content Include="Assets\app\css\evn.css" />
+    <Content Include="Assets\app\css\fix_ie.css" />
+    <Content Include="Assets\app\css\fsi-gantt-chart.css" />
+    <Content Include="Assets\app\css\fsi.css" />
+    <Content Include="Assets\app\css\icons.css" />
+    <Content Include="Assets\app\css\ionicons.min.css" />
+    <Content Include="Assets\app\css\jquery.treegrid.css" />
+    <Content Include="Assets\app\css\main.css" />
+    <Content Include="Assets\app\css\mcredit.css" />
+    <Content Include="Assets\app\css\ntfs.css" />
+    <Content Include="Assets\app\css\pccc.css" />
+    <Content Include="Assets\app\css\size.css" />
+    <Content Include="Assets\app\css\stg.css" />
+    <Content Include="Assets\app\css\table.css" />
+    <Content Include="Assets\app\css\tvdt.css" />
+    <Content Include="Assets\app\css\upfile.css" />
+    <Content Include="Assets\app\css\vks.css" />
+    <Content Include="Assets\app\css\wf.css" />
+    <Content Include="Assets\app\fonts\BYekan.woff" />
+    <Content Include="Assets\app\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\app\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\app\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\app\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\app\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\app\fonts\FontAwesome.otf" />
+    <Content Include="Assets\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\app\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Assets\app\fonts\ionicons.eot" />
+    <Content Include="Assets\app\fonts\ionicons.svg" />
+    <Content Include="Assets\app\fonts\ionicons.ttf" />
+    <Content Include="Assets\app\fonts\ionicons.woff" />
+    <Content Include="Assets\app\fonts\typicons.eot" />
+    <Content Include="Assets\app\fonts\typicons.svg" />
+    <Content Include="Assets\app\fonts\typicons.ttf" />
+    <Content Include="Assets\app\fonts\typicons.woff" />
+    <Content Include="Assets\app\fonts\weathericons-regular-webfont.eot" />
+    <Content Include="Assets\app\fonts\weathericons-regular-webfont.svg" />
+    <Content Include="Assets\app\fonts\weathericons-regular-webfont.ttf" />
+    <Content Include="Assets\app\fonts\weathericons-regular-webfont.woff" />
+    <Content Include="Assets\app\fonts\WeatherIcons-Regular.otf" />
+    <Content Include="Assets\app\fonts\YekanWeb-Bold.woff" />
+    <Content Include="Assets\app\fonts\YekanWeb-Regular.woff" />
+    <Content Include="Assets\app\img\21cabddae0ef1e593f7d11a4262a3ec9-appstore.png" />
+    <Content Include="Assets\app\img\arrow2.png" />
+    <Content Include="Assets\app\img\ava1.jpg" />
+    <Content Include="Assets\app\img\avatar.png" />
+    <Content Include="Assets\app\img\banner_fsi_docpro.png" />
+    <Content Include="Assets\app\img\banner_pccc.png" />
+    <Content Include="Assets\app\img\banner_vks.png" />
+    <Content Include="Assets\app\img\bg_home.png" />
+    <Content Include="Assets\app\img\bg_login.gif" />
+    <Content Include="Assets\app\img\birthdayLine.svg" />
+    <Content Include="Assets\app\img\bn_tvdt.png" />
+    <Content Include="Assets\app\img\bong-birth.png" />
+    <Content Include="Assets\app\img\cake.png" />
+    <Content Include="Assets\app\img\cake.svg" />
+    <Content Include="Assets\app\img\calendar-icon.png" />
+    <Content Include="Assets\app\img\calendar.png" />
+    <Content Include="Assets\app\img\chat_bg.png" />
+    <Content Include="Assets\app\img\check.png" />
+    <Content Include="Assets\app\img\collapses.png" />
+    <Content Include="Assets\app\img\contacts-icon.png" />
+    <Content Include="Assets\app\img\cover.jpg" />
+    <Content Include="Assets\app\img\dadoc.svg" />
+    <Content Include="Assets\app\img\Dardboard QLKD.jpg" />
+    <Content Include="Assets\app\img\dashboard_bg.jpg" />
+    <Content Include="Assets\app\img\dock-background-left.png" />
+    <Content Include="Assets\app\img\dock-background-left_BAK.png" />
+    <Content Include="Assets\app\img\docks_icon_1 - old.png" />
+    <Content Include="Assets\app\img\docks_icon_1.png" />
+    <Content Include="Assets\app\img\docks_icon_2 - old.png" />
+    <Content Include="Assets\app\img\docks_icon_2.png" />
+    <Content Include="Assets\app\img\docks_icon_3 - old.png" />
+    <Content Include="Assets\app\img\docks_icon_3.png" />
+    <Content Include="Assets\app\img\docks_icon_4 - old.png" />
+    <Content Include="Assets\app\img\docks_icon_4.png" />
+    <Content Include="Assets\app\img\docks_icon_5 - old.png" />
+    <Content Include="Assets\app\img\docks_icon_5.png" />
+    <Content Include="Assets\app\img\docks_icon_6 - old.png" />
+    <Content Include="Assets\app\img\docks_icon_6.png" />
+    <Content Include="Assets\app\img\docks_icon_7 - old.png" />
+    <Content Include="Assets\app\img\docks_icon_7.png" />
+    <Content Include="Assets\app\img\docks_icon_8 - old.png" />
+    <Content Include="Assets\app\img\docks_icon_8.png" />
+    <Content Include="Assets\app\img\docks_icon_9 - old.png" />
+    <Content Include="Assets\app\img\docks_icon_9.png" />
+    <Content Include="Assets\app\img\Docpro_sortlogo.png" />
+    <Content Include="Assets\app\img\doctype_icon.png" />
+    <Content Include="Assets\app\img\doctype_icon_blue.png" />
+    <Content Include="Assets\app\img\doctype_icon_orange.png" />
+    <Content Include="Assets\app\img\doctype_icon_white.png" />
+    <Content Include="Assets\app\img\exts-16.png" />
+    <Content Include="Assets\app\img\exts-24-old.png" />
+    <Content Include="Assets\app\img\exts-24.png" />
+    <Content Include="Assets\app\img\exts-svg\icon-music.svg" />
+    <Content Include="Assets\app\img\exts-svg\icon-photo.svg" />
+    <Content Include="Assets\app\img\exts-svg\icon_file_default.svg" />
+    <Content Include="Assets\app\img\exts-svg\icon_file_excel.svg" />
+    <Content Include="Assets\app\img\exts-svg\icon_file_pdf.svg" />
+    <Content Include="Assets\app\img\exts-svg\icon_file_powerpoint.svg" />
+    <Content Include="Assets\app\img\exts-svg\icon_file_video.svg" />
+    <Content Include="Assets\app\img\exts-svg\icon_file_word.svg" />
+    <Content Include="Assets\app\img\exts-svg\icon_file_zip.svg" />
+    <Content Include="Assets\app\img\exts.png" />
+    <Content Include="Assets\app\img\facetime-icon.png" />
+    <Content Include="Assets\app\img\finder-icon.png" />
+    <Content Include="Assets\app\img\flags.png" />
+    <Content Include="Assets\app\img\folder_icon.png" />
+    <Content Include="Assets\app\img\fsigroup.png" />
+    <Content Include="Assets\app\img\fsigroup.svg" />
+    <Content Include="Assets\app\img\fsi_logo.png" />
+    <Content Include="Assets\app\img\Google_Chrome_icon_%282011%29.png" />
+    <Content Include="Assets\app\img\header_banner5.png" />
+    <Content Include="Assets\app\img\header_bannertvdt.png" />
+    <Content Include="Assets\app\img\header_banner_tvdt - Copy.png" />
+    <Content Include="Assets\app\img\header_banner_tvdt.png" />
+    <Content Include="Assets\app\img\hotline_login.png" />
+    <Content Include="Assets\app\img\icon-submenu.png" />
+    <Content Include="Assets\app\img\icons-16.png" />
+    <Content Include="Assets\app\img\icons-24.png" />
+    <Content Include="Assets\app\img\icons.png" />
+    <Content Include="Assets\app\img\icon_bug.svg" />
+    <Content Include="Assets\app\img\icon_sugget.svg" />
+    <Content Include="Assets\app\img\icon_task.svg" />
+    <Content Include="Assets\app\img\indicator.png" />
+    <Content Include="Assets\app\img\itunes_5122x.png" />
+    <Content Include="Assets\app\img\lightbox_close.png" />
+    <Content Include="Assets\app\img\lightbox_loading.gif" />
+    <Content Include="Assets\app\img\lightbox_next.png" />
+    <Content Include="Assets\app\img\lightbox_prev.png" />
+    <Content Include="Assets\app\img\lineWhite.png" />
+    <Content Include="Assets\app\img\loading.gif" />
+    <Content Include="Assets\app\img\loading_c.gif" />
+    <Content Include="Assets\app\img\load_cmt.png" />
+    <Content Include="Assets\app\img\load_more_cmt.png" />
+    <Content Include="Assets\app\img\logo-evn.png" />
+    <Content Include="Assets\app\img\logo-tvdt.png" />
+    <Content Include="Assets\app\img\logo.png" />
+    <Content Include="Assets\app\img\logo_admin.png" />
+    <Content Include="Assets\app\img\logo_bcy.png" />
+    <Content Include="Assets\app\img\logo_borrow.png" />
+    <Content Include="Assets\app\img\logo_category.png" />
+    <Content Include="Assets\app\img\logo_cd.png" />
+    <Content Include="Assets\app\img\logo_dgdoc.png" />
+    <Content Include="Assets\app\img\logo_equip.png" />
+    <Content Include="Assets\app\img\logo_hr.png" />
+    <Content Include="Assets\app\img\logo_license.png" />
+    <Content Include="Assets\app\img\logo_myfile.png" />
+    <Content Include="Assets\app\img\logo_product.png" />
+    <Content Include="Assets\app\img\logo_projects.png" />
+    <Content Include="Assets\app\img\logo_qlvb.png" />
+    <Content Include="Assets\app\img\logo_sale.png" />
+    <Content Include="Assets\app\img\logo_task.png" />
+    <Content Include="Assets\app\img\logo_tdkt.png" />
+    <Content Include="Assets\app\img\logo_ttcn.png" />
+    <Content Include="Assets\app\img\logo_workflow.png" />
+    <Content Include="Assets\app\img\mail-icon.png" />
+    <Content Include="Assets\app\img\maps-icon-os-x-300x300.png" />
+    <Content Include="Assets\app\img\menu\admin_account.png" />
+    <Content Include="Assets\app\img\menu\admin_catalog.png" />
+    <Content Include="Assets\app\img\menu\admin_content.png" />
+    <Content Include="Assets\app\img\menu\admin_database.png" />
+    <Content Include="Assets\app\img\menu\admin_system.png" />
+    <Content Include="Assets\app\img\menu\icon-msg.png" />
+    <Content Include="Assets\app\img\message-error.png" />
+    <Content Include="Assets\app\img\message-notifies.png" />
+    <Content Include="Assets\app\img\message-ok.png" />
+    <Content Include="Assets\app\img\message-warn.png" />
+    <Content Include="Assets\app\img\messages-icon.png" />
+    <Content Include="Assets\app\img\mod-header.png" />
+    <Content Include="Assets\app\img\module_doc.png" />
+    <Content Include="Assets\app\img\module_logo.png" />
+    <Content Include="Assets\app\img\MUC_TIEU\bg_10.png" />
+    <Content Include="Assets\app\img\MUC_TIEU\icon_1.png" />
+    <Content Include="Assets\app\img\MUC_TIEU\icon_2.png" />
+    <Content Include="Assets\app\img\MUC_TIEU\icon_3.png" />
+    <Content Include="Assets\app\img\MUC_TIEU\icon_4.png" />
+    <Content Include="Assets\app\img\MUC_TIEU\icon_5.png" />
+    <Content Include="Assets\app\img\MUC_TIEU\moutainAsset.png" />
+    <Content Include="Assets\app\img\MUC_TIEU\people.png" />
+    <Content Include="Assets\app\img\MUC_TIEU\skyAsset.png" />
+    <Content Include="Assets\app\img\Notes-5.png" />
+    <Content Include="Assets\app\img\online.png" />
+    <Content Include="Assets\app\img\page403.png" />
+    <Content Include="Assets\app\img\photo_1.png" />
+    <Content Include="Assets\app\img\PIE.htc" />
+    <Content Include="Assets\app\img\plus.png" />
+    <Content Include="Assets\app\img\qlda.svg" />
+    <Content Include="Assets\app\img\quochuy.png" />
+    <Content Include="Assets\app\img\reminders-icon.png" />
+    <Content Include="Assets\app\img\safari-icon.png" />
+    <Content Include="Assets\app\img\search.png" />
+    <Content Include="Assets\app\img\search_icon.png" />
+    <Content Include="Assets\app\img\sharefile_icon.png" />
+    <Content Include="Assets\app\img\sharefile_icon_blue.png" />
+    <Content Include="Assets\app\img\sharefile_icon_orange.png" />
+    <Content Include="Assets\app\img\sharefile_icon_white.png" />
+    <Content Include="Assets\app\img\sonlamap.png" />
+    <Content Include="Assets\app\img\star-off.png" />
+    <Content Include="Assets\app\img\star-on.png" />
+    <Content Include="Assets\app\img\system-preferences-icon.png" />
+    <Content Include="Assets\app\img\timeline_photo.jpg" />
+    <Content Include="Assets\app\img\upload.png" />
+    <Content Include="Assets\app\img\WLine1.svg" />
+    <Content Include="Assets\app\js\admin.js" />
+    <Content Include="Assets\app\js\autocomplete.js" />
+    <Content Include="Assets\app\js\avatar.js" />
+    <Content Include="Assets\app\js\check-ie-version.js" />
+    <Content Include="Assets\app\js\cust.js" />
+    <Content Include="Assets\app\js\main.js" />
+    <Content Include="Assets\app\js\modernizr-custom.js" />
+    <Content Include="Assets\app\js\pages.js" />
+    <Content Include="Assets\app\js\test.js" />
+    <Content Include="Assets\app\js\upfile.js" />
+    <Content Include="Assets\app\js\uploader.js" />
+    <Content Include="Assets\app\js\utils.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\Error\AccessDenied.cshtml" />
+    <Content Include="Views\Error\Page404.cshtml" />
+    <Content Include="Views\Error\Page500.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\License\Index.cshtml" />
+    <Content Include="Views\Shared\BannerHeader.cshtml" />
+    <Content Include="Views\Shared\Blocks\Login.cshtml" />
+    <Content Include="Views\Shared\Dock - old.cshtml" />
+    <Content Include="Views\Shared\Dock.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Shared\Header.cshtml" />
+    <Content Include="Views\Shared\IsConfirm.cshtml" />
+    <Content Include="Views\Shared\IsConfirms.cshtml" />
+    <Content Include="Views\Shared\IsDelete.cshtml" />
+    <Content Include="Views\Shared\IsDeletes.cshtml" />
+    <Content Include="Views\Shared\Left.cshtml" />
+    <Content Include="Views\Shared\Menu.cshtml" />
+    <Content Include="Views\Shared\Message.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LayoutProfile.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RazorCSharpViewEngine.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AutocompleteController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CropController.cs" />
+    <Compile Include="Controllers\DmNhaThauController.cs" />
+    <Compile Include="Controllers\DownController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LioneDemoController.cs" />
+    <Compile Include="Controllers\DanhSachDuAnController.cs" />
+    <Compile Include="Controllers\NhanVienController.cs" />
+    <Compile Include="Controllers\ThumbController.cs" />
+    <Compile Include="Customs\Charts\AreaspLine.cs" />
+    <Compile Include="Customs\Charts\BarChart.cs" />
+    <Compile Include="Customs\Charts\Chart.cs" />
+    <Compile Include="Customs\Charts\DocChart.cs" />
+    <Compile Include="Customs\Charts\HighChart.cs" />
+    <Compile Include="Customs\Charts\KDChart.cs" />
+    <Compile Include="Customs\Charts\LineChart.cs" />
+    <Compile Include="Customs\Charts\MorriChart.cs" />
+    <Compile Include="Customs\Charts\PieChart.cs" />
+    <Compile Include="Customs\Charts\PlotChart.cs" />
+    <Compile Include="Customs\Constant\Constant.cs" />
+    <Compile Include="Customs\Entities\BlockEntity.cs" />
+    <Compile Include="Customs\Entities\ExportWordCommon.cs" />
+    <Compile Include="Customs\Enum\EnumType.cs" />
+    <Compile Include="Customs\Helper\HtmlHelper.cs" />
+    <Compile Include="Customs\Params\ConfirmParam.cs" />
+    <Compile Include="Customs\Params\DeleteParam.cs" />
+    <Compile Include="Customs\Params\LoginParam.cs" />
+    <Compile Include="Customs\Params\SearchParam.cs" />
+    <Compile Include="Customs\Params\ViewParam.cs" />
+    <Compile Include="Customs\Utility\CUtility.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DATA\ClassNew.cs" />
+    <Compile Include="Models\DATA\DmNhaThau.cs" />
+    <Compile Include="Models\DATA\NhanVien.cs" />
+    <Compile Include="Models\DATA\NhanVienExcel.cs" />
+    <Compile Include="Models\DATA\PhongBan.cs" />
+    <Compile Include="Models\DocProPVEPDATAContext.cs" />
+    <Compile Include="Models\DocProPVEPNhanVienContext.cs" />
+    <Compile Include="Models\View\CategoryCusModel.cs" />
+    <Compile Include="Models\View\DmNhaThauModel.cs" />
+    <Compile Include="Models\View\NhanVienModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\CategoryCusRepository.cs" />
+    <Compile Include="Repository\DmNhaThauRepository.cs" />
+    <Compile Include="Repository\NhanVienRepository.cs" />
+    <Compile Include="Repository\PhongBanRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\cloud.docpro.vn.pubxml" />
+    <Content Include="Views\Shared\Forms\FormUpfile.cshtml" />
+    <Content Include="Views\Shared\_LayoutBackUp.cshtml" />
+    <Content Include="Views\Shared\LeftBackUp.cshtml" />
+    <Content Include="Views\Shared\Blocks\DragUpfile.cshtml" />
+    <Content Include="Views\Shared\IsConfirmXN.cshtml" />
+    <Content Include="Views\Shared\IsConfirmYesNo.cshtml" />
+    <Content Include="Views\LioneDemo\Index.cshtml" />
+    <Content Include="Views\LioneDemo\DanhSach.cshtml" />
+    <Content Include="Views\LioneDemo\Create.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Category\Toolbar.cshtml" />
+    <Content Include="Views\Category\Update.cshtml" />
+    <Content Include="Views\Category\Create.cshtml" />
+    <Content Include="Views\Category\ControlType.cshtml" />
+    <Content Include="Views\Category\Categories.cshtml" />
+    <Content Include="Views\DmNhaThau\Index.cshtml" />
+    <Content Include="Views\DmNhaThau\Create.cshtml" />
+    <Content Include="Views\DmNhaThau\DmNhaThaus.cshtml" />
+    <Content Include="Views\DanhSachDuAn\Index.cshtml" />
+    <Content Include="Views\NhanVien\nhanvien.cshtml" />
+    <Content Include="Views\NhanVien\Index.cshtml" />
+    <Content Include="Views\NhanVien\Create.cshtml" />
+    <Content Include="Views\NhanVien\Toolbar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\app\js\controller\" />
+    <Folder Include="Customs\Reports\" />
+    <Folder Include="Downloads\" />
+    <Folder Include="Templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+﻿<div id="drap_drop_fixed" data-target="#DragBoxFrmUpfile"
+     data-rel="#AttachSfiles" data-href="@Locate.Url("/{0}/save-upfile.html", Model ?? "stgfile")"
+     data-treefolder="@Locate.Url("/{0}/tree-folder/{1}.html", Model ?? "stgfile", Utils.StringAlias("Thư mục gốc"))"
+     data-parent-id="0" data-parent-name="@Locate.T("Thư mục gốc")" class="clickUpfile inputStgFile">
+    <div class="drap_drop_fixed_content">
+        <img src="/stg/Assets/app/img/upload.png">
+        <span>@Locate.T("Thả tệp để bắt đầu tải lên")</span>
+    </div>
+    <a href="javascript:;" class="close_drap_drop"><i class="ion-android-close"></i></a>
+</div>
+<div class="drap_drop_fixed_ov"></div>

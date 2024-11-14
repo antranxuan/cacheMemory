@@ -1,0 +1,81 @@
+﻿@model DocproPVEP.Models.View.DmNhaThauModel
+@{
+
+
+}
+<form id="FrmCr" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+      title="@ViewBag.Title" action="@Model.Url" class="form-horizontal bv-form frm-df frm-job hasFooter validateForm quickSubmit success-on-refresh form_ttHoatDong  " method="post" novalidate="novalidate">
+    <div class="dialog_content_body useScrollBar">
+        <div class="container-fluid">
+
+            <div class="clearfix"></div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Mã nhà thầu")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBox("MaNhaThau", "MaNhaThau", Model.DmNhaThau.MaNhaThau, Locate.T("Mã nhà thầu"), Locate.T("Mã nhà thầu"), true, new { }, 50, (Model.Action == 2 ? true : false))
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Tên nhà thầu")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBox("TenNhaThau", "TenNhaThau", Model.DmNhaThau.TenNhaThau, Locate.T("Tên nhà thầu"), Locate.T("Tên nhà thầu"), true, new { }, 550)
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Điện thoại")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBox("DienThoai", "DienThoai", Model.DmNhaThau.DienThoai, Locate.T("Điện thoại"), Locate.T("Điện thoại"), false, new { }, 50)
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Fax")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBox("Fax", "Fax", Model.DmNhaThau.Fax, Locate.T("Fax"), Locate.T("Fax"), false, new { }, 50)
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Người đại diện")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBox("NguoiDaiDien", "NguoiDaiDien", Model.DmNhaThau.DienThoai, Locate.T("Người đại diện"), Locate.T("Người đại diện"), false, new { }, 150)
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Người điều hành")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBox("NguoiDieuHanh", "NguoiDieuHanh", Model.DmNhaThau.NguoiDieuHanh, Locate.T("Người điều hành"), Locate.T("Người điều hành"), false, new { }, 150)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog_content_footer">
+        <div class="container-fluid">
+            <div class="form-group">
+                <div class="col-xs-12 text-right">
+                    <input type="hidden" name="ID" id="ID" value="@Model.DmNhaThau.ID" />
+                    <input type="hidden" name="Created" id="Created" value="@Model.DmNhaThau.Created" />
+                    <input type="hidden" name="CreatedBy" id="CreatedBy" value="@Model.DmNhaThau.CreatedBy" />
+                    <input type="hidden" name="Updated" id="Updated" value="@Model.DmNhaThau.Updated" />
+                    <input type="hidden" name="UpdatedBy" id="UpdatedBy" value="@Model.DmNhaThau.UpdatedBy" />
+                    @if (Model.Action != 2)
+                    {
+                        <button class="btn btn-primary btn-sm" type="submit">@Locate.T("Lưu")</button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

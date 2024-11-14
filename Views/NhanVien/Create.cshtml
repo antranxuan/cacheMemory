@@ -1,0 +1,99 @@
+﻿@model DocproPVEP.Models.View.NhanVienModel
+@{
+
+    var phongban = ViewBag.phongban as List<PhongBan>;
+}
+<form id="FrmCr" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+      title="@ViewBag.Title" action="@Model.Url" class="form-horizontal bv-form frm-df frm-job hasFooter validateForm quickSubmit success-on-refresh form_ttHoatDong  " method="post" novalidate="novalidate">
+    <div class="dialog_content_body useScrollBar">
+        <div class="container-fluid">
+
+            <div class="clearfix"></div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Tên nhân viên")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBox("Name", "Name", Model.NhanVien.Name, Locate.T("Tên nhân viên"), Locate.T("Tên nhân viên"), true, new { }, 550)
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Giới tính")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusDropdownList("Sex", "Sex", "Chọn giới tính",
+                        new List<SelectListItem> {
+                            new SelectListItem { Value = "true", Text = "Nam", Selected = Model.NhanVien.Sex.ToString() == "true" },
+                            new SelectListItem { Value = "false", Text = "Nữ", Selected = Model.NhanVien.Sex.ToString() == "false" }
+                        },
+                        new { })
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Điện thoại")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBoxPhone("Phone", "Phone", Model.NhanVien.Phone, Locate.T("Điện thoại"), Locate.T("Điện thoại"), true, new { })
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Lương")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBoxDigit("Salary", "Salary", Model.NhanVien.Salary, Locate.T("Lương"), Locate.T("Lương"), true, new { }, 50)
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Địa chỉ")
+                </label>
+                <div class="col-lg-9">
+                    @Html.CusTextBox("Address", "Address", Model.NhanVien.Address, Locate.T("Địa chỉ"), Locate.T("Dịa chỉ"), true, new { }, 550)
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 control-label">
+                    @Locate.T("Phòng ban")
+                </label>
+                <div class="col-lg-9">
+                    @if (phongban != null && phongban.Any())
+                    {
+                        @Html.CusDropdownList("IDPhongBan", "IDPhongBan", "Chọn phòng ban",
+                                 phongban.Select(pb => new SelectListItem
+                                 {
+                                     Value = pb.ID.ToString(),
+                                     Text = pb.Name,
+                                     Selected = Model.NhanVien != null && Model.NhanVien.IDPhongBan == pb.ID
+                                 }).ToList(),
+                                 new { @class = "form-control" }) }
+                    else
+                    {
+                        <span>@Locate.T("Không có phòng ban")</span>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog_content_footer">
+        <div class="container-fluid">
+            <div class="form-group">
+                <div class="col-xs-12 text-right">
+                    <input type="hidden" name="ID" id="ID" value="@Model.NhanVien.ID" />
+                    <input type="hidden" name="Created" id="Created" value="@Model.NhanVien.Created" />
+                    <input type="hidden" name="Updated" id="Updated" value="@Model.NhanVien.Updated" />
+                    @if (Model.Action != 2)
+                    {
+                        <button class="btn btn-primary btn-sm" type="submit">@Locate.T("Lưu")</button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

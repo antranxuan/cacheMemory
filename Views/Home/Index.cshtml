@@ -1,0 +1,49 @@
+﻿<div class="page-breadcrumbs hidden">
+    <ul class="breadcrumb">
+        <li>
+            <i class="fa fa-home"></i>
+            <a href="@Locate.Url("/home.html")">@Locate.T("Tổng quan")</a>
+        </li>
+    </ul>
+</div>
+<div class="page-body">
+    
+</div>
+@{
+    var hotline = GlobalConfig.GetStringSetting("Hotline");
+    if (Utils.IsNotEmpty(hotline))
+    {
+        @*<div class="support_id">
+                <div class="sup_header">
+                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                    @Locate.T("Hotline"): @hotline
+                    <a class="btn_sup"></a>
+                </div>
+                <div class="sup_main">
+                    <h3 class="title">@GlobalConfig.GetStringSetting("CustomerInfo")</h3>
+                    <ul>
+                        @{
+                            var address = GlobalConfig.GetStringSetting("CustomerAddress");
+                            if (Utils.IsNotEmpty(address))
+                            {
+                                var lines = address.Split('\n');
+                                foreach (var line in lines)
+                                {
+                                    <li>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i> @line
+                                    </li>
+                                }
+                            }
+                        }
+                        <li>
+                            <i class="fa fa-phone-square" aria-hidden="true"></i> @GlobalConfig.GetStringSetting("CustomerPhone")
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i> @GlobalConfig.GetStringSetting("CustomerEmail")
+                        </li>
+                    </ul>
+                </div>
+            </div>*@
+    }
+}
+

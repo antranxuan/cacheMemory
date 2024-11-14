@@ -1,0 +1,26 @@
+<div class="header_banner" style="@(string.IsNullOrEmpty(ViewBag.Banner) ? string.Empty : "background-image: url("+ GlobalConfig.StgSrcPath(ViewBag.Banner) + ")")">
+    <div class="head_left">
+        <div class="logo">
+            <a href="@Locate.RUrl("/home.html")" title="@ViewBag.CustomerSystem">
+                @if (Utils.IsEmpty(ViewBag.Channel.Logo))
+                {
+                    <img src="/Assets/app/img/logo.png" title="@ViewBag.CustomerSystem">
+                }
+                else
+                {
+                    <img src="@GlobalConfig.StgSrcPath(ViewBag.Channel.Logo)" title="@ViewBag.CustomerSystem">
+                }
+            </a>
+        </div>
+        <div class="site_name">
+            <a href="@Locate.RUrl("/home.html")" title="@ViewBag.CustomerSystem">
+                <h2 class="vi_name">
+                    @ViewBag.CustomerName
+                </h2>
+                <h3 class="en_name">
+                    @ViewBag.CustomerSystem
+                </h3>
+            </a>
+        </div>
+    </div>
+</div>

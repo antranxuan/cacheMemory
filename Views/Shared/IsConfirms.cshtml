@@ -1,0 +1,33 @@
+﻿<form id="FrmDlItems" action="@ViewBag.ConfirmsParam.Action" title="@ViewBag.Title"
+      accept-charset="utf-8" enctype="multipart/form-data" class="form-horizontal form-group-sm frm-df frm-rm form-delete validateForm @(!Equals(ViewBag.ConfirmsParam.Class,null) ? ViewBag.ConfirmsParam.Class  :string.Empty)" method="POST">
+    <div class="container-fluid">
+        <div class="form-group form-group-title">
+            <div class="col-sm-12 txtct">
+                <label class="control-label title">@ViewBag.Title</label>
+            </div>
+        </div>
+        <div class="form-group form-group-name">
+            <div class="col-sm-12 txtct">
+                <label class="control-label name">@ViewBag.ConfirmsParam.ConfTitle</label>
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="col-sm-12 txtct">
+                @if (Request.IsAjaxRequest())
+                {
+                    <button class="btn btn-default btn-sm closeDialog" type="button">@Locate.T("Hủy")</button>
+                }
+                else
+                {
+                    <a class="btn btn-default btn-sm backLink" href="@ViewBag.ConfirmsParam.RedirectPath" title="@ViewBag.BackTitle">@Locate.T("Quay lại")</a>
+                }
+                @foreach (var id in ViewBag.ConfirmsParam.ID)
+                {
+                    <input type="hidden" name="ID" value="@id" />
+                }
+                <input type="hidden" name="RedirectPath" value="@ViewBag.ConfirmsParam.RedirectPath" />
+                <button class="btn btn-primary btn-sm" type="submit">@Locate.T("Đồng ý")</button>
+            </div>
+        </div>
+    </div>
+</form>

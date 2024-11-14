@@ -1,0 +1,536 @@
+﻿<div class="navbar-header pull-right">
+    <div class="navbar-account">
+        <ul class="account-area">
+           
+            @if (GlobalConfig.GetBoolSetting("IsFSIGroup"))
+            {
+
+            }
+            <li class="hidden">
+                <a href="@Locate.Url("/home.html")" title="@Locate.T("Trang tổng quan")" class="appname_logo">
+                    <img src="~/Assets/app/img/module_logo.png" alt="@Locate.T("Trang tổng quan")">
+                </a>
+            </li>
+            <li class="header_mainMenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" title="@Locate.T("Menu")" href="javascript:;">
+                    <i class="icon ion-android-menu"></i>
+                </a>
+                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-notifications">
+                    @if (ViewBag.CUser.IsAdmin)
+                    {
+                        <li>
+                            <a href="@Locate.RUrlVitualPath("admin", "/home.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="fa fa-cog blue"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Quản trị hệ thống")</span>
+                                        <span class="description">@Locate.T("Phân quyền, tài khoản, cơ cấu tổ chức") ...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                   
+                    @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyKhoVatLy))
+                    {
+                        <li>
+                            <a href="@Locate.RUrlVitualPath("stg", "/warehouse.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="fa fa-database orange"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Kho vật lý")</span>
+                                        <span class="description">@Locate.T("Dãy, giá kệ, tầng") ...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLySoHoSo))
+                    {
+                        <li>
+                            <a href="@Locate.RUrlVitualPath("book", "/home.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="fa fa-database orange"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Báo cáo thống kê")</span>
+                                        <span class="description">@Locate.T("Sổ xuất, sổ nhập, sổ xuất tạm") ...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.DangKyHoSoMuonTra, IModule.KiemDuyetHoSoMuonTra, IModule.QuanLyHoSoMuonTra) && GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyKho, IModule.SuDungKho))
+                    {
+                        <li>
+                            <a href="@Locate.RUrlVitualPath("stg", "/borrow.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="fa fa-exchange blue"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Mượn trả")</span>
+                                        <span class="description">@Locate.T("Mượn trả hồ sơ, tài liệu kho") ...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyTLCN))
+                    {
+                        <li>
+                            <a href="@Locate.RUrlVitualPath("stg", "/myfile.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="ionicons ion-android-person blue"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Tài liệu cá nhân")</span>
+                                        <span class="description">@Locate.T("Tài liệu riêng của bạn") ...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Locate.RUrlVitualPath("stg", "/sharefile.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="glyphicon sharefile_icon glyphicon-folder-close blue"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Tài liệu chia sẻ cho bạn")</span>
+                                        <span class="description">@Locate.T("Tài liệu người dùng chia sẻ cho bạn") ...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyLTL))
+                    {
+                        <li>
+                            <a href="@Locate.RUrlVitualPath("stg", "/doctype.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="glyphicon doctype_icon glyphicon-folder-close orange"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Loại tài liệu")</span>
+                                        <span class="description">@Locate.T("Định nghĩa các loại tài liệu lưu trữ") ...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyLHS))
+                    {
+                        <li>
+                            <a href="@Locate.RUrlVitualPath("stg", "/record-type.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="glyphicon doctype_icon glyphicon-folder-close orange"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Loại hồ sơ")</span>
+                                        <span class="description">@Locate.T("Định nghĩa các loại hồ sơ lưu trữ") ...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.BienTapTuLieu) || GlobalConfig.IsAccess(ViewBag.CUser, IModule.KiemDuyetTuLieu))
+                    {
+                        <li>
+                            <a href="@Locate.RUrlVitualPath("doc", "/stgfile.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="glyphicon glyphicon-book orange"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Số hóa tài liệu")</span>
+                                        <span class="description">@Locate.T("Biên tập, kiểm duyệt tài liệu số hóa") ...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyDanhMuc))
+                    {
+                        <li>
+                            <a href="@Locate.RUrlVitualPath("admin", "/category-type.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="ion-social-buffer ionicons  orange"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Quản lý danh mục")</span>
+                                        <span class="description">@Locate.T("Định nghĩa các loại danh mục") ...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    }
+                    
+                    @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.ThucHienCongViec, IModule.QuanLyCongViec))
+                    {
+                        <li class="dropdown-hover">
+                            <a href="#">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="fa fa-tasks blue"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Công việc")</span>
+                                        <span class="description">@Locate.T("Quản lý và thực hiện công việc") ...</span>
+                                    </div>
+                                    <i class="dropdown-expand fa fa-angle-right"></i>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="@Locate.RUrlVitualPath("wfl", "/job/crs.html")">
+                                        <div class="clearfix">
+                                            <div class="notification-body">
+                                                <span class="title">@Locate.T("Công việc đã tạo")</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Locate.RUrlVitualPath("wfl", "/job/exs.html")">
+                                        <div class="clearfix">
+                                            <div class="notification-body">
+                                                <span class="title">@Locate.T("Công việc được giao")</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    }
+                   
+                   
+                    @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyKHCN))
+                    {
+                        <li class="dropdown-hover">
+                            <a href="@Locate.RUrlVitualPath("bcy", "/home.html")">
+                                <div class="clearfix">
+                                    <div class="notification-icon">
+                                        <i class="glyphicon glyphicon-book orange"></i>
+                                    </div>
+                                    <div class="notification-body">
+                                        <span class="title">@Locate.T("Quản lý khoa học - công nghệ")</span>
+                                        <span class="description">@Locate.T("Nhiệm vụ KH & CN, sản phẩm") ...</span>
+                                    </div>
+                                    <i class="dropdown-expand fa fa-angle-right"></i>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="@Locate.RUrlVitualPath("bcy", "/nhiem-vu.html")">
+                                        <span class="menu-text">@Locate.T("Nhiệm vụ KH & CN")</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Locate.RUrlVitualPath("bcy", "/san-pham.html")">
+                                        <span class="menu-text">@Locate.T("Sản phẩm")</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Locate.RUrlVitualPath("bcy", "/tac-vu.html")">
+                                        <span class="menu-text">@Locate.T("Tác vụ")</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                   
+                    <li class="dropdown-footer ">
+                        <span></span>
+                        <span class="pull-right"></span>
+                    </li>
+                </ul>
+                <!--/Notification Dropdown-->
+            </li>
+            @if (GlobalConfig.GetBoolSetting("IsUseNotify"))
+            {
+                <li class="toggle_notifications">
+                    <a class="notifies-dropdown-toggle" title="@Locate.T("Thông báo")" href="javascript:;">
+                        <i class="icon ion-ios-bell"></i>
+                        <span class="badge" id="NtfUnread" data-value="@ViewBag.NtfiCount">@(ViewBag.NtfiCount > 0 ? ViewBag.NtfiCount.ToString() : string.Empty)</span>
+                    </a>
+                    <div class="pull-right dropdown-menu dropdown-arrow dropdown-notifications">
+                        <ul class="nav sidebar-menu notifies">
+                            <li class="open">
+                                <div class="linkdoctypes  none-max-height">
+                                    <div class="user_activity">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#user_activity_ntf">@Locate.T("Bảng tin")</a></li>
+                                            <li><a data-toggle="tab" href="#user_activity_recent">@Locate.T("Gần nhất")</a></li>
+                                            <li class="hidden"><a data-toggle="tab" href="#user_activity_importanr">@Locate.T("Quan trọng")</a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="user_activity_ntf" class="useScrollBar tab-pane fade in active">
+                                                <div class="user_search">
+                                                    <input type="text" class="form-control autocompleteHtmlOther" data-target="#NtfContainer" data-href="@Locate.Url("/autocomplete/notify.html")" placeholder="@Locate.T("Tìm theo tên người sử dụng")">
+                                                </div>
+                                                <div id="NtfContainer">
+                                                    @(new HtmlString(ViewBag.NtfiHtml))
+                                                </div>
+                                            </div>
+                                            <div id="user_activity_recent" class="useScrollBar tab-pane fade">
+                                                @(new HtmlString(ViewBag.RecentHtml))
+                                            </div>
+                                            <div id="user_activity_importanr" class="useScrollBar tab-pane fade">
+                                                <h3>Quan trọng</h3>
+                                            </div>
+                                            <div class="_SeeMore">
+                                                <a href="@Locate.RUrl("/home/notification.html")">@Locate.T("Xem tất cả thông báo")</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/Notification Dropdown-->
+                </li>
+            }
+            @if (GlobalConfig.GetBoolSetting("IsUseMessage"))
+            {
+                <li>
+                    <a title="@Locate.T("Tin nhắn")" href="@Locate.RUrlVitualPath("login", "/chat.html")">
+                        <i class="icon ion-ios-chatbubble"></i>
+                        <span class="badge" id="ChatUnread" data-value="@ViewBag.MsgCount">@(ViewBag.MsgCount > 0 ? ViewBag.MsgCount.ToString() : string.Empty)</span>
+                    </a>
+                    <!--Messages Dropdown-->
+                    <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages hidden">
+                        <li>
+                            <a href="javascript:;">
+                                <img src="/Assets/beyond/img/avatars/divyia.jpg" class="message-avatar" alt="Divyia Austin">
+                                <div class="message">
+                                    <span class="message-sender">
+                                        Divyia Austin
+                                    </span>
+                                    <span class="message-time">
+                                        2 minutes ago
+                                    </span>
+                                    <span class="message-subject">
+                                        Here's the recipe for apple pie
+                                    </span>
+                                    <span class="message-body">
+                                        to identify the sending application when the senders image is shown for the main icon
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/Messages Dropdown-->
+                </li>
+            }
+            @if (GlobalConfig.GetBoolSetting("IsUseJob"))
+            {
+                <li class="hidden">
+                    <a class="dropdown-toggle" data-toggle="dropdown" title="Tasks" href="javascript:;">
+                        <i class="icon fa fa-tasks"></i>
+                        <span class="badge">4</span>
+                    </a>
+                    <!--Tasks Dropdown-->
+                    <ul class="pull-right dropdown-menu dropdown-tasks dropdown-arrow ">
+                        <li class="dropdown-header bordered-darkorange">
+                            <i class="fa fa-tasks"></i>
+                            4 Tasks In Progress
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="clearfix">
+                                    <span class="pull-left">Account Creation</span>
+                                    <span class="pull-right">65%</span>
+                                </div>
+
+                                <div class="progress progress-xs">
+                                    <div style="width:65%" class="progress-bar"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="clearfix">
+                                    <span class="pull-left">Profile Data</span>
+                                    <span class="pull-right">35%</span>
+                                </div>
+
+                                <div class="progress progress-xs">
+                                    <div style="width:35%" class="progress-bar progress-bar-success"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="clearfix">
+                                    <span class="pull-left">Updating Resume</span>
+                                    <span class="pull-right">75%</span>
+                                </div>
+
+                                <div class="progress progress-xs">
+                                    <div style="width:75%" class="progress-bar progress-bar-darkorange"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="clearfix">
+                                    <span class="pull-left">Adding Contacts</span>
+                                    <span class="pull-right">10%</span>
+                                </div>
+
+                                <div class="progress progress-xs">
+                                    <div style="width:10%" class="progress-bar progress-bar-warning"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-footer">
+                            <a href="javascript:;">
+                                See All Tasks
+                            </a>
+                            <button class="btn btn-xs btn-default shiny darkorange icon-only pull-right"><i class="fa fa-check"></i></button>
+                        </li>
+                    </ul>
+                    <!--/Tasks Dropdown-->
+                </li>
+            }
+            <li>
+                @if (GlobalConfig.GetBoolSetting("IsUseProfile"))
+                {
+                    <a class="login-area" href="@Locate.RUrlVitualPath("login", "/account/newfeed.html")">
+                        <div class="avatar" title="@ViewBag.CUser.Name">
+                            <img class="myavatar" src="@GlobalConfig.StgSrcThumb(ViewBag.CUser.Avatar, 100, "auto")">
+                        </div>
+                        <section>
+                            <h2><span class="profile"><span>@ViewBag.CUser.Name</span></span></h2>
+                        </section>
+                        <i class="fa fa-caret-down click_caret" aria-hidden="true"></i>
+                    </a>
+                }
+                else
+                {
+                    <a class="login-area" href="#">
+                        <div class="avatar" title="@ViewBag.CUser.Name">
+                            <img class="myavatar" src="@GlobalConfig.StgSrcThumb(ViewBag.CUser.Avatar, 100, "auto")">
+                        </div>
+                        <section>
+                            <h2><span class="profile"><span>@ViewBag.CUser.Name</span></span></h2>
+                        </section>
+                        <i class="fa fa-caret-down click_caret" aria-hidden="true"></i>
+                    </a>
+                }
+
+
+                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area drop_click_caret">
+                    <!--Avatar Area-->
+                    <li class="user_ava">
+                        <div class="avatar-area">
+                            <img src="@GlobalConfig.StgSrcPath(ViewBag.CUser.Avatar)" class="myavatar avatar">
+                            <a data-target=".ui-dialog:visible" class="quickUpdate caption" href="@Locate.RUrlVitualPath("login", "/account/avatar.html")"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                    <li class="username"><a>@ViewBag.CUser.Name</a></li>
+                    <li class="email"><a>@ViewBag.CUser.Email</a></li>
+                    <!--Avatar Area-->
+                    <li class="edit">
+                        <a data-target=".ui-dialog:visible" class="quickUpdate" href="@Locate.RUrlVitualPath("login", "/account/info.html")"><i class="fa fa-user" aria-hidden="true"></i> @Locate.T("Cập nhật thông tin")</a>
+                    </li>
+                                            <li class="user_changePass">
+                            <a data-target=".ui-dialog:visible" href="@Locate.RUrlVitualPath("login", "/account/change-password.html")"><i class="fa fa-lock" aria-hidden="true"></i> @Locate.T("Đổi mật khẩu")</a>
+                        </li>
+                        <!--/Theme Selector Area-->
+                    <li class="user_logout">
+                        <a href="@Locate.RUrl(AclConfig.LogoutUrl)">
+                            <i class="fa fa-sign-out"></i> @Locate.T("Đăng xuất")
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+
+
+
+            <!--  <li>
+                 <a class="dropdown-toggle" data-toggle="dropdown">
+
+                     <div class="avatar" title="@ViewBag.CUser.Name">
+                         <img class="myavatar" src="@GlobalConfig.StgSrcThumb(ViewBag.CUser.Avatar, 100, "auto")">
+                     </div>
+                     <section>
+                         <h2><span class="profile"><span>@ViewBag.CUser.Name</span></span></h2>
+                     </section>
+                 </a> -->
+            <!--Login Area Dropdown-->
+            <!--/Login Area Dropdown-->
+            <!-- </li> -->
+            <!-- <li>
+                <a href="@Locate.RUrl(AclConfig.LogoutUrl)" title="@Locate.T("Đăng xuất")">
+                    <i class="icon ion-log-out"></i>
+                </a>
+            </li> -->
+            @if (GlobalConfig.GetBoolSetting("Multilanguage"))
+            {
+            <li class="switch_lang">
+                @if (Locate.IsLangVI())
+                {
+                    <a class="dropdown-toggle" data-toggle="dropdown" title="@Locate.T("Chuyển sang giao diện tiếng Việt")" href="javascript:;">
+                        <i class="flags flag-vi"></i>
+                    </a>
+                }
+                @if (Locate.IsLangEN())
+                {
+                    <a class="dropdown-toggle" data-toggle="dropdown" title="@Locate.T("Chuyển sang giao diện tiếng Anh")" href="javascript:;">
+                        <i class="flags flag-en"></i>
+                    </a>
+                }
+                @if (Locate.IsLangLO())
+                {
+                    <a class="dropdown-toggle" data-toggle="dropdown" title="@Locate.T("Chuyển sang giao diện tiếng Lào")" href="javascript:;">
+                        <i class="flags flag-lo"></i>
+                    </a>
+                }
+                <ul class="pull-right dropdown-menu">
+                    @if (!Locate.IsLangVI())
+                    {
+                        <li>
+                            <a href="@Locate.Switcher("vi")" title="@Locate.T("Chuyển sang giao diện tiếng Việt")">
+                                <i class="flags flag-vi"></i> <span>@Locate.T("Tiếng Việt")</span>
+                            </a>
+                        </li>
+                    }
+                    @if (!Locate.IsLangEN())
+                    {
+                        <li>
+                            <a href="@Locate.Switcher("en")" title="@Locate.T("Chuyển sang giao diện tiếng Anh")">
+                                <i class="flags flag-en"></i> <span>@Locate.T("English")</span>
+                            </a>
+                        </li>
+                    }
+                    @if (!Locate.IsLangLO())
+                    {
+                        <li>
+                            <a href="@Locate.Switcher("lo")" title="@Locate.T("Chuyển sang giao diện tiếng Lào")">
+                                <i class="flags flag-lo"></i> <span>@Locate.T("ລາວ")</span>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+</ul>
+</div>
+</div>

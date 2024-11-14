@@ -1,0 +1,502 @@
+﻿
+
+
+.gantt_cal_light,
+.gantt_cal_quick_info,
+.gantt_container,
+.gantt_message_area,
+.gantt_modal_box,
+.gantt_tooltip {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.gantt_layout_cell_border_bottom {
+    border-bottom: 1px solid #cecece;
+}
+.gantt_layout_cell_border_top {
+    border-top: 1px solid #cecece;
+}
+.gantt_layout_cell_border_right {
+    border-right: 1px solid #cecece;
+}
+.gantt_layout_cell_border_left {
+    border-left: 1px solid #cecece;
+}
+.gantt_layout_cell {
+    position: relative;
+    box-sizing: border-box;
+}
+.gantt_container {
+    font-size: 13px;
+    border: 1px solid #cecece;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    float: left
+}
+.gantt_container, .gantt_tooltip {
+    background-color: #fff;
+    font-family: Arial;
+}
+.gantt_layout_cell_border_transparent {
+    border-color: transparent;
+}
+.gantt_layout_x {
+    white-space: nowrap;
+}
+.gantt_layout_x>.gantt_layout_cell {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+.gantt_layout_outer_scroll_vertical .gantt_layout_content {
+    overflow-y: hidden;
+}
+.gantt_layout_content {
+    width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.gantt_grid,
+.gantt_task {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+.gantt_grid_scale, 
+.gantt_task_scale, 
+.gantt_task_vscroll {
+    background-color: #fff;
+}
+.gantt_grid_scale, 
+.gantt_task_scale {
+    color: #6b6b6b;
+    font-size: 12px;
+    border-bottom: 1px solid #cecece;
+    box-sizing: border-box;
+}
+.gantt_data_area {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.gantt_data_area div, 
+.gantt_grid div {
+    -ms-touch-action: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.gantt_links_area {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gantt_task_bg {
+    overflow: hidden;
+    z-index: 10;
+    position: relative;
+    pointer-events: none;
+}
+.gantt_row.odd, 
+.gantt_task_row.odd {
+    /* background-color: #fff; */
+}
+.gantt_cell, 
+.gantt_grid_head_cell, 
+.gantt_row, 
+.gantt_scale_cell, 
+.gantt_task_cell, 
+.gantt_task_row {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.gantt_row, 
+.gantt_task_row {
+    border-bottom: 1px solid #ebebeb;
+    /* background-color: #fff; */
+}
+.gantt_task_cell {
+    display: inline-block;
+    height: 100%;
+    border-right: 1px solid #ebebeb;
+    float: left;
+}
+.gantt_task_line {
+    border-radius: 0;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #3db9d3;
+    /* border: 1px solid #2898b0; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -moz-user-select: -moz-none;
+}
+.gantt_task_progress_wrapper {
+    border-radius: inherit;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+.gantt_bars_area {
+}
+
+.gantt_layout_x {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.task_todo {
+    background-color: #8d91a7 !important;
+}
+
+.task_progress {
+    background-color: #ADD574;
+}
+
+.task_done {
+    background-color: #367517 !important;
+}
+
+.task_close {
+    background-color: #981b48 !important;
+}
+.task_pause {
+    background-color: #F09C42 !important;
+}
+
+.task_reject {
+    background-color: #FF0000 !important;
+}
+.gantt_task_line.gantt_task_overdue {
+    background-color: #FE5656;
+}
+
+.gantt_task_line .gantt_task_progress {
+    background-color: #ADD574;
+}
+.gantt_task_line .gantt_task_done {
+    background-color: #367517!important;
+}
+.gantt_task_reject {
+    background-color: #FF0000 !important;
+}
+.gantt_task_line .gantt_task_todo {
+    background-color: #8d91a7 !important;
+}
+.gantt_task_line .gantt_task_over_parent {
+    background-color: #fb9393;
+    position: relative;
+}
+.gantt_task_line .gantt_task_over {
+    background-color: #EE0000;
+}
+.gantt_task_line .gantt_task_closed {
+    background-color: #981b48 !important;
+}
+
+.gantt_task_line .gantt_task_real {
+    background-color: #4fa6f5 !important;
+    position: relative;
+}
+.gantt_task_line .gantt_task_inprogress {
+    background-color: #33AAEC;
+}
+/*Nghĩa viết thêm*/
+.gantt_task_line.gantt_task_default {
+    background-color: #99CCFF;
+}
+
+.gantt_task_line .gantt_task_real {
+    background-color: #00CCFF;
+}
+.gantt_task_line .gantt_task_process {
+    background-color: #00CC33;
+}
+
+
+
+.gantt_task_resizable .ui-icon {
+    display: none !important;
+}
+
+.gantt_bars_area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.gantt_task_row {
+    float: left;
+}
+.gantt_task_bg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.gantt_task_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.gantt_layout_x {
+    overflow: hidden;
+    width: 100%;
+}
+
+#gantt_here {
+    float: left;
+    width: 100%;
+}
+
+.gantt_container {
+    /* width: 100%; */
+    overflow: hidden;
+    clear: both;
+    max-width: 100%;
+}
+
+.gantt_layout_x>.timeline_cell {
+    width: auto;
+    flex: 1;
+    overflow: auto;
+}
+
+.gantt_layout_outer_scroll_horizontal .gantt_layout_content {
+    overflow-x: visible;
+}
+
+
+
+
+
+.gantt_task_scale {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.gantt_datetime {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.gantt_datetime_bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.gantt_datetime_day {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.gantt_datetime_day span {
+    text-align: center;
+}
+
+.gantt_datetime_day span:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.gantt_datetime_day {
+    border-right: 1px solid #ddd;
+}
+
+
+
+
+.gantt_datetime_top {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    background: #41434e;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.gantt_datetime_day span {
+    background: #484a58;
+    color: #fff;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+.gantt_datetime_day span + span {
+    background: #5a5d6e;
+    font-weight: bold;
+}
+.gantt_datetime_day span {
+    border-right: 1px solid #ddd;
+}
+
+
+
+
+
+
+/*LEFT COL*/
+
+.gantt_row_task {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  
+}
+.gantt_cell_duration {
+    width: 50px;
+}
+.gantt_cell_add {
+    width: 30px;
+}
+.gantt_cell_date {
+    width: 100px;
+}
+.gantt_cell_add,
+.gantt_cell_date,
+.gantt_cell_duration{
+  text-align: center; 
+}
+.gantt_cell_info {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+}
+
+.gantt_add {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    color: #ccc;
+    -webkit-transition: all .25s;
+       -moz-transition: all .25s;
+        -ms-transition: all .25s;
+         -o-transition: all .25s;
+            transition: all .25s;
+}
+.gantt_add:hover{
+    color: #444;
+}
+
+.gantt_close {
+    opacity: 0;
+    visibility: visible;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.parent_row_task .gantt_close {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+    .parent_row_task .gantt_close .fa:before {
+        content: "\f196";
+    }
+.parent_row_task.active .gantt_close .fa:before {
+    content: "\f147";
+}
+
+.gantt_tree_grid_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.gantt_tree_grid_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: #00BCD4;
+    color: #fff;
+    font-weight: bold;
+}
+.gantt_tree_grid_content .gantt_grid_head_add,
+.gantt_tree_grid_content .gantt_grid_head_duration,
+.gantt_tree_grid_content .gantt_grid_head_start_date {
+    text-align: center;
+    white-space: normal;
+}
+.gantt_tree_grid_content .gantt_grid_head_add {
+    width: 30px;
+}
+
+.gantt_tree_grid_content .gantt_grid_head_duration {
+    width: 50px;
+}
+
+.gantt_tree_grid_content .gantt_grid_head_start_date {
+    width: 100px;
+}
+
+.gantt_tree_grid_content .gantt_grid_head_text {
+    flex: 1;
+    text-align: left;
+    padding: 0 15px;
+}
+.gantt_tree_grid_close {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    color: #fff;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+.gantt_cell_left {
+    flex: 1;
+    width: calc(100% - 180px);
+    min-width:0;
+}
+
+.gantt_cell_right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 180px;
+}
+
+.gantt_tree_icon.gantt_close {}
+
+.gantt_cell_info .gantt_tree_icon {
+    text-align: center;
+    display: block;
+    width: 20px;
+}
+
+.gantt_cell_info .gantt_tree_content {
+    width: calc(100% - 20px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

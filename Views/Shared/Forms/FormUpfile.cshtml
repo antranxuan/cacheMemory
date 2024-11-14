@@ -1,0 +1,153 @@
+﻿<div class="dragBox" id="DragBoxFrmUpfile" title="@Locate.T(" Tải tài liệu lên")">
+    <form class="frmUpfile" id="FrmUpfile" enctype="multipart/form-data" method="post" action="#">
+        <div class="form-files useScrollBar">
+            <table class="tablecs container-rows">
+                <thead class="grd-gray">
+                    <tr>
+                        <th class="auto">@Locate.T("Tên tài liệu")</th>
+                        <th class="px120 hidden">@Locate.T("Mẫu OCR")</th>
+                        <th class="px120">@Locate.T("Loại tài liệu")</th>
+                        <th class="px100">@Locate.T("D.Lượng")</th>
+                        <th class="px100">@Locate.T("Trạng thái")</th>
+                        <th class="px130 hidden">@Locate.T("Thời hạn")</th>
+                        <th class="px50">
+                            <label>
+                                <input class="group-checkable" type="checkbox">
+                                <span class="text"></span>
+                            </label>
+                        </th>
+                        <th class="px100">
+                            <div>
+                                <button class="btn btn-link btn-xs tickrels delFiles" type="button">
+                                    <i class="icons-16 icon-remove-file"></i> @Locate.T("Xóa")
+                                </button>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot class="hidden">
+                    <tr>
+                        <td class="nopad">
+                            <input name="FileNames" type="text" class="files" />
+                            <input name="FilePaths" type="hidden" class="filepaths" />
+                        </td>
+                        <td class="hidden">
+                            <select name="OcrForms" class="ocrforms optOcrforms"></select>
+                        </td>
+                        <td>
+                            <select name="Doctypes" class="doctypes optDoctypes">
+                                @(new HtmlString(Utils.RenderOptions(ViewBag.StgDocTypes)))
+                            </select>
+                        </td>
+                        <td>
+                            <input name="Sizes" type="text" class="sizes" readonly />
+                        </td>
+                        <td>
+                            <div class="upStatus">
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                    <div class="progress-label">0%</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="hidden">
+                            <input name="Expireds" type="text" class="datetime" />
+                        </td>
+                        <td>
+                            <label>
+                                <input class="checkboxes" type="checkbox">
+                                <span class="text"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div>
+                                <button class="btn btn-link btn-xs delFile" type="button">
+                                    <i class="icons-16 icon-remove-file"></i> @Locate.T("Xóa")
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="form-actions">
+            <div class="boxcs tablecs padt5">
+                <div class="col-md-3 hidden">
+                    <select class="slOcrForm optOcrforms hidden" id="FrmUpfileOCRForms">
+                        <option>@Locate.T("Mẫu OCR")</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="slDoctype optDoctypes" id="FrmUpfileDoctypes">
+                        <option>@Locate.T("Loại tài liệu")</option>
+                        @(new HtmlString(Utils.RenderOptions(ViewBag.StgDocTypes, false)))
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        @*<button id="FrmUpfileTreefolder" class="btn btn-default quickTree btn-vtri" data-is-root="1" data-is-dialog="1" data-rel="#FrmUpfileParentName" data-id-ignore="0"
+                                      data-url="/" type="button">
+                                @Locate.T("Vị trí lưu")
+                            </button>*@
+                        <a title="@Locate.T(" Vị trí lưu")" href=@Locate.Url("/Archive/DialogBoxSelect") data-target="#FrmCr_Huychungtu" data-width="900"
+                           class="btn btn-default quickUpdate btn-vtri" tabindex="0" aria-controls="searchable" style="margin: 3px 8px 0;padding: 2px 15px;">
+                            @Locate.T("Vị trí lưu")
+                        </a>
+                        @*<input id="idthung" value="0" type="text" />*@
+                        <input id="FrmUpfileParentName" name="ParentName" data-targetid="#FrmUpfileParent" class="form-control form-label name-vtri" readonly type="text">
+                        <input id="FrmUpfileParent" type="hidden" name="Parent">
+                    </div>
+                </div>
+                <div class="col-md-6 text-right">
+                    <div>
+                        <button class="btn btn-default miniDialog" type="button">@Locate.T("Ẩn")</button>
+                        <button class="btn btn-default addUpfile" data-rel="#AttachSfiles" type="button">@Locate.T("Thêm")</button>
+                        <button class="btn btn-danger cancelUpfile" type="button">@Locate.T("Hủy")</button>
+                        <button class="btn btn-primary" type="submit">@Locate.T("Lưu lại")</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="DPlugin">
+    <div class="text-center">
+        <div class="pluginTooltip">
+            <strong>@Locate.T("Bạn cần tải chương trình hỗ trợ DocPro Plugin trước khi thực hiện")</strong>
+        </div>
+        <a href="/plugins/@(ViewBag.Plugin)PluginInstaller.zip" class="btn btn-sm btn-danger downPlugin">
+            <i class="icons icon-downloadf"></i>
+            <span>@Locate.T("DocPro Plugin")</span>
+        </a>
+    </div>
+</div>
+
+<form id="FrmChangeFile" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+      title="@Locate.T(" Thay file")" action="#" class="form-horizontal bv-form validateForm" method="post" novalidate="novalidate">
+    <div class="container-fluid">
+        <div class="form-group hidden">
+            <div class="col-lg-12">
+                <div name="ChangeFilePath"
+                     data-bv-callback="true"
+                     data-bv-callback-message="@Locate.T(" Bạn chưa tải file thay thế")"
+                     data-bv-callback-callback="CustomValidator.SelectorRequired"
+                     data-bv-field="ChangeFilePath"
+                     data-selector=".fileitem">
+                    <label class="col-lg-12 no-padding">@Locate.T("File tải lên")</label>
+                    <div id="ChangeFilePath" class="col-lg-12 no-padding files" data-bv-field-rel="ChangeFilePath"></div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-12">
+                <input type="hidden" name="ID" value="0" id="FrmChangeFileID" />
+                <button type="submit" class="btn btn-info btn-sm">@Locate.T("Xong")</button>
+                <button type="button" class="btn btn-info btn-sm attachFile" data-rel="#AttachFile" data-target="#ChangeFilePath"
+                        data-file-name="FileName" data-file-path="Path">
+                    <i class="glyphicon glyphicon-upload "></i> @Locate.T("Tải file")
+                </button>
+            </div>
+        </div>
+    </div>
+</form>

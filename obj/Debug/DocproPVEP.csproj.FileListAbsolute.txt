@@ -1,0 +1,172 @@
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\DocproPVEP.dll.config
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\DocproPVEP.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\DocproPVEP.pdb
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\CanBQ.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\ClosedXML.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\DocProLogic.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\DocProModel.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\DocProProdKey.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\DocProSearch.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\DocProUtil.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\ExcelNumberFormat.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\Newtonsoft.Json.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\PetaPoco.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.IO.Packaging.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Net.Http.Formatting.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.Helpers.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.Http.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.Http.WebHost.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.Mvc.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.Razor.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.WebPages.Deployment.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.WebPages.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.WebPages.Razor.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\Xceed.Words.NET.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\iOneAPI.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\DocProHRMLogic.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\EPPlus.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\ClosedXML.pdb
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\ClosedXML.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\ExcelNumberFormat.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Net.Http.Formatting.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.Helpers.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.Http.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.Http.WebHost.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.Mvc.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.Razor.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.WebPages.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.WebPages.Deployment.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Web.WebPages.Razor.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\obj\Debug\DocproPVEP.csprojAssemblyReference.cache
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\obj\Debug\DocproPVEP.csproj.CoreCompileInputs.cache
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\obj\Debug\DocproPVEP.csproj.CopyComplete
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\obj\Debug\DocproPVEP.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\obj\Debug\DocproPVEP.pdb
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\BouncyCastle.Crypto.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\itextsharp.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\itextsharp.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\StackExchange.Redis.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Buffers.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Memory.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Numerics.Vectors.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\Newtonsoft.Json.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\StackExchange.Redis.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Buffers.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Memory.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Numerics.Vectors.xml
+D:\Development\He thong PVEP\Source Git\pvep.docpro.vn\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\DocproPVEP.dll.config
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\DocproPVEP.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\DocproPVEP.pdb
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\CanBQ.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\ClosedXML.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\DocProLogic.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\DocProModel.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\DocProProdKey.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\DocProSearch.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\DocProUtil.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\ExcelNumberFormat.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\Newtonsoft.Json.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\PetaPoco.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\StackExchange.Redis.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Buffers.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.IO.Packaging.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Memory.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Net.Http.Formatting.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Numerics.Vectors.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.Helpers.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.Http.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.Http.WebHost.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.Mvc.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.Razor.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.WebPages.Deployment.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.WebPages.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.WebPages.Razor.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\iOneAPI.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\DocProHRMLogic.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\EPPlus.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\itextsharp.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\BouncyCastle.Crypto.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\ClosedXML.pdb
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\ClosedXML.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\ExcelNumberFormat.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\Newtonsoft.Json.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\StackExchange.Redis.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Buffers.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Memory.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Net.Http.Formatting.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Numerics.Vectors.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.Helpers.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.Http.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.Http.WebHost.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.Mvc.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.Razor.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.WebPages.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.WebPages.Deployment.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\System.Web.WebPages.Razor.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\bin\itextsharp.xml
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\obj\Debug\DocproPVEP.csproj.AssemblyReference.cache
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\obj\Debug\DocproPVEP.csproj.CoreCompileInputs.cache
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\obj\Debug\DocproPVEP.csproj.Up2Date
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\obj\Debug\DocproPVEP.dll
+D:\Develop\Source\Tranning\Source\pvep.docpro.vn\obj\Debug\DocproPVEP.pdb
+D:\AXA\Source\pvep.docpro.vn\bin\DocproPVEP.dll.config
+D:\AXA\Source\pvep.docpro.vn\bin\DocproPVEP.dll
+D:\AXA\Source\pvep.docpro.vn\bin\DocproPVEP.pdb
+D:\AXA\Source\pvep.docpro.vn\bin\CanBQ.dll
+D:\AXA\Source\pvep.docpro.vn\bin\ClosedXML.dll
+D:\AXA\Source\pvep.docpro.vn\bin\DocProLogic.dll
+D:\AXA\Source\pvep.docpro.vn\bin\DocProModel.dll
+D:\AXA\Source\pvep.docpro.vn\bin\DocProProdKey.dll
+D:\AXA\Source\pvep.docpro.vn\bin\DocProSearch.dll
+D:\AXA\Source\pvep.docpro.vn\bin\DocProUtil.dll
+D:\AXA\Source\pvep.docpro.vn\bin\DocumentFormat.OpenXml.dll
+D:\AXA\Source\pvep.docpro.vn\bin\ExcelNumberFormat.dll
+D:\AXA\Source\pvep.docpro.vn\bin\Newtonsoft.Json.dll
+D:\AXA\Source\pvep.docpro.vn\bin\PetaPoco.dll
+D:\AXA\Source\pvep.docpro.vn\bin\StackExchange.Redis.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Buffers.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.IO.Packaging.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Memory.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Net.Http.Formatting.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Numerics.Vectors.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.Helpers.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.Http.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.Http.WebHost.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.Mvc.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.Razor.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.WebPages.Deployment.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.WebPages.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.WebPages.Razor.dll
+D:\AXA\Source\pvep.docpro.vn\bin\iOneAPI.dll
+D:\AXA\Source\pvep.docpro.vn\bin\DocProHRMLogic.dll
+D:\AXA\Source\pvep.docpro.vn\bin\EPPlus.dll
+D:\AXA\Source\pvep.docpro.vn\bin\System.Threading.Tasks.Extensions.dll
+D:\AXA\Source\pvep.docpro.vn\bin\ClosedXML.pdb
+D:\AXA\Source\pvep.docpro.vn\bin\ClosedXML.xml
+D:\AXA\Source\pvep.docpro.vn\bin\ExcelNumberFormat.xml
+D:\AXA\Source\pvep.docpro.vn\bin\Newtonsoft.Json.xml
+D:\AXA\Source\pvep.docpro.vn\bin\StackExchange.Redis.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Buffers.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Memory.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Net.Http.Formatting.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Numerics.Vectors.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.Helpers.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.Http.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.Http.WebHost.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.Mvc.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.Razor.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.WebPages.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.WebPages.Deployment.xml
+D:\AXA\Source\pvep.docpro.vn\bin\System.Web.WebPages.Razor.xml
+D:\AXA\Source\pvep.docpro.vn\obj\Debug\DocproPVEP.csproj.AssemblyReference.cache
+D:\AXA\Source\pvep.docpro.vn\obj\Debug\DocproPVEP.csproj.CoreCompileInputs.cache
+D:\AXA\Source\pvep.docpro.vn\obj\Debug\DocproPVEP.csproj.CopyComplete
+D:\AXA\Source\pvep.docpro.vn\obj\Debug\DocproPVEP.dll
+D:\AXA\Source\pvep.docpro.vn\obj\Debug\DocproPVEP.pdb
+D:\AXA\Source\pvep.docpro.vn\bin\DocumentFormat.OpenXml.xml

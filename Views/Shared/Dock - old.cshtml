@@ -1,0 +1,111 @@
+<div class="dock useDragable hidden-xs hidden-sm">
+    <div id="dockWrapper">
+        <a href="#" class="btn_hide_dock" title="@Locate.T("Ẩn thanh menu ngang")">
+            <i class="ion-ios-close-empty"></i>
+        </a>      
+        <div class="cap left"></div>
+        <div class="dock_icons">
+            @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyTLCN))
+            {
+                <div class="dock_icon active">
+                    <a href="@Locate.RUrlVitualPath("stg", "/myfile.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Tài liệu cá nhân")">
+                        <img alt="Notes" src="/Assets/app/img/docks_icon_1.png">
+                    </a>
+                </div>
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("stg", "/sharefile.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Tài liệu chia sẻ")">
+                        <img alt="reminders" src="/Assets/app/img/docks_icon_2.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.DangKyHoSoMuonTra, IModule.KiemDuyetHoSoMuonTra, IModule.QuanLyHoSoMuonTra) && (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyKho) || GlobalConfig.IsAccess(ViewBag.CUser, IModule.SuDungKho)))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("stg", "/borrow.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Mượn trả tài liệu")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_3.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyLTL))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("stg", "/doctype.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Loại tài liệu")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_4.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyKho) || GlobalConfig.IsAccess(ViewBag.CUser, IModule.SuDungKho))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("stg", "/stgfile.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Kho lưu trữ")">
+                        <img alt="contacts" src="/Assets/app/img/docks_icon_5.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.BienTapQuyTrinh, IModule.KiemDuyetQuyTrinh, IModule.XuatBanQuyTrinh, IModule.BienTapThuTuc, IModule.KiemDuyetThuTuc, IModule.XuatBanThuTuc, IModule.ThucHienCongViec, IModule.QuanLyCongViec, IModule.DangKyThuTuc, IModule.GiaiQuyetThuTuc))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("wfl", "/job.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quy trình - Công việc")">
+                        <img alt="contacts" src="/Assets/app/img/docks_icon_7.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.DangKyTDKT, IModule.XemXetTDKT, IModule.PheDuyetTDKT))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("tdkt", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Thi đua khen thưởng")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_4.png">
+                    </a>
+                </div>
+            }
+            @if (GlobalConfig.IsAccess(ViewBag.CUser, IModule.QuanLyDanhMuc))
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("admin", "/category-type.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản lý danh mục")">
+                        <img alt="App Store" src="/Assets/app/img/docks_icon_4.png">
+                    </a>
+                </div>
+            }
+            @if (ViewBag.CUser.IsAdmin)
+            {
+                <div class="dock_icon">
+                    <a href="@Locate.RUrlVitualPath("admin", "/home.html")" data-toggle="tooltip" data-placement="top" title="@Locate.T("Quản trị hệ thống")">
+                        <img alt="mail" src="/Assets/app/img/docks_icon_6.png">
+                    </a>
+                </div>
+            }
+            @if (Utils.IsNotEmpty<UserShortcut>(ViewBag.UserShortcuts))
+            {
+                <div class="dock_icon">
+                    <div class='multi-action' data-toggle="tooltip" data-placement="top" title="@Locate.T("Danh sách ghim")">
+                      <button class='action-button'><span>+</span></button>
+                      <ul class='actions shortcuts'>
+                        @foreach (var item in ViewBag.UserShortcuts)
+                        {
+                            <li id="UserShortcut@(item.ID)">
+                                <a href="@item.Link" title="@item.Name">
+                                    <i href="@Locate.Url("/account/delete-shortcut/{0}.html", Utils.StringAlias(item.Name, item.ID))" data-id="@item.ID" data-target-delete-click="#UserShortcut@(item.ID)" class="quickDelete glyphicon glyphicon-remove-sign red" title="@Locate.T("Xóa ghim")"></i>
+                                    <i href="@Locate.Url("/account/update-shortcut/{0}.html", Utils.StringAlias(item.Name, item.ID))" data-id="@item.ID" data-target=".ui-dialog:visible" class="quickUpdate glyphicon glyphicon-edit blue" title="@Locate.T("Sửa ghim")"></i>
+                                    <span class="Dshort_title">
+                                        @item.Name
+                                    </span>
+                                </a>
+                            </li>
+                        }
+                      </ul>
+                    </div>                
+                </div>
+            }
+            
+        </div>
+    </div>
+</div>
+<div class="toggle_dock">
+    <div class="toggle_dock_content">
+        <div class="toggle_dock_open_icon">
+            <a href="#" class="btn_show_dock" title="@Locate.T("Hiện thanh menu ngang")">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</div>

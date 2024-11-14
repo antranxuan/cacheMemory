@@ -1,0 +1,29 @@
+﻿<div class="dataTables_filter">
+    <form class="quickSearch" data-target="#Section" action="@Locate.Url("/category.html")" method="post" enctype="multipart/form-data">
+        <div class="col-md-2 quickSearch_md">
+            <label>
+                <input type="hidden" value="@ViewBag.SearchParam.Type" name="Type" />
+                <input type="text" value="@ViewBag.SearchParam.Term" name="Term" class="form-control input-sm" placeholder="@Locate.T("Tìm kiếm theo tên, mô tả")" aria-controls="searchable">
+            </label>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-info" type="submit"><i class="glyphicon glyphicon-search"></i> @Locate.T("Tìm kiếm")</button>
+        </div>
+    </form>
+</div>
+<div class="DTTT btn-group">
+    
+
+    <a title="@Locate.T("Xóa")" data-href="@Locate.Url("/category/is-deletes.html")"
+       class="btn btn-danger hidden actMultiTicks quickDeletes" tabindex="0" aria-controls="searchable">
+        <i class="fa fa-trash"></i> @Locate.T("Xóa")
+    </a>
+    @{
+        var categoryParent = ViewBag.CategoryParent ?? new Category();
+    }
+    <a title="@Locate.T("Tạo mới")" data-target="#FrmCrCategory" data-width="600"
+       data-parent-id="@categoryParent.ID" data-parent-name="@categoryParent.Name"
+       class="btn btn-info openDialogCate" tabindex="0" aria-controls="searchable">
+        <i class="fa fa-plus"></i> @Locate.T("Tạo mới")
+    </a>
+</div>

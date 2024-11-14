@@ -1,0 +1,41 @@
+﻿@{
+    var categoryTypes = ((List<CategoryType>)ViewBag.CategoryTypes
+        ?? new List<CategoryType>()).OrderBy(x => x.Weight).ToList();
+}
+<div class="sidebar-header-wrapper hidden">
+    <input type="text" class="searchinput" placeholder="@Locate.T("Tìm kiếm")" />
+    <i class="glyphicon orange glyphicon-search"></i>
+    <div class="searchhelper">@Locate.T("Tìm kiếm")</div>
+</div>
+<ul class="nav sidebar-menu useScrollBar">
+    @if (ViewBag.CUser.IsAdmin)
+    {
+        <li class="open">
+            <a class="menu-dropdown">
+                <i class="menu-icon white ionicons ion-social-buffer"></i>
+                <span class="menu-text">@Locate.T("Quản lý danh mục")</span>
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+
+                @foreach (var item in categoryTypes)
+                {
+                    <li>
+                        <a href="@Locate.Url("/category.html?Type={0}", item.ID)">
+                            <i class="menu-icon orange fa fa-list"></i>
+                            <span class="menu-text">@Locate.T(item.Name)</span>
+                        </a>
+                    </li>
+                }
+                <li>
+                    <a href="@Locate.Url("/DmNhaThau.html")">
+                        <i class="menu-icon orange fa fa-list"></i>
+                        <span class="menu-text">@Locate.T("Danh mục nhà thầu")</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+     
+
+    }
+</ul>
