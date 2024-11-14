@@ -322,3 +322,15 @@
 
 
 [14-11-2024 16:46:20]:	{"ID":0,"IDChannel":0,"Type":0,"Position":0,"PendingApproval":false,"PendingPublish":false,"Term":null,"Content":null,"IDNotIn":null}
+
+
+[14-11-2024 17:0:48]:	{"ID":0,"IDChannel":0,"Type":0,"Position":0,"PendingApproval":false,"PendingPublish":false,"Term":null,"Content":null,"IDNotIn":null}
+
+
+[14-11-2024 17:0:52]:	{"ID":0,"IDChannel":0,"Type":0,"Position":1,"PendingApproval":false,"PendingPublish":false,"Term":"","Content":null,"IDNotIn":null}
+
+
+[14-11-2024 17:0:54]:	{"ID":0,"IDChannel":0,"Type":0,"Position":0,"PendingApproval":false,"PendingPublish":false,"Term":"","Content":null,"IDNotIn":null}
+
+
+[14-11-2024 17:1:1]:	{"ID":0,"IDChannel":0,"Type":0,"Position":0,"PendingApproval":false,"PendingPublish":false,"Term":null,"Content":null,"IDNotIn":null}
